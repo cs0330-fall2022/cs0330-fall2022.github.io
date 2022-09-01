@@ -468,13 +468,19 @@ footer a {
     }
 }
 
+.hamburger-icon {
+  color: #323c18'
+}
+
 @media(max-width:768px) {
     .navbar-custom {
-        height:50px;
+        height:75px;
         -o-transition: background .2s ease-in-out, padding .2s ease-in-out;
         -webkit-transition: background .2s ease-in-out, padding .2s ease-in-out;
         -moz-transition: background .2s ease-in-out, padding .2s ease-in-out;
         transition: background .2s ease-in-out, padding .2s ease-in-out;
+        display: flex:
+        align-items: center;
     }
     .section-title{
         padding-top:8px;
@@ -482,7 +488,9 @@ footer a {
     }
     .brand-heading{
         margin-top:25px;
+        padding-bottom: 8px;
     }
+
     .top-nav-collapse {
         padding: 0;
 		background-color: var(--lighter-tan-bg);
