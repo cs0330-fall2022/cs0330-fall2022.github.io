@@ -43,7 +43,7 @@ body {
     width: 100%;
     font-family: "Montserrat", Arial, serif;
     /* font-family: ComicText; */
-    background-color: #eafdff;
+  background-color: var(--green-bg);
 }
 
 html {
@@ -210,7 +210,7 @@ td, th {
 }
 /* Alternate background colors (and adjust text colors to compensate) */
 .section-header {
-    background-color: #eafdff;
+  background-color: var(--green-bg);
     height:50px;
 }
 
@@ -424,7 +424,7 @@ footer a {
     transition: background .3s ease-in-out;
     color: #222e23;
     font-family: ComicTextBold;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 }
 
 .navbar-custom .nav li a:hover {
@@ -449,6 +449,7 @@ footer a {
   padding-top:80px;
 }
 
+
 @media(min-width:768px) {
     .navbar-custom {
         padding: 8px 0;
@@ -459,6 +460,7 @@ footer a {
         -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
         transition: background .5s ease-in-out, padding .5s ease-in-out;
     }
+
     .top-nav-collapse {
         padding: 0;
 		background-color: var(--lighter-tan-bg);
@@ -483,12 +485,22 @@ footer a {
     }
     .top-nav-collapse {
         padding: 0;
-		background-color: var(--light-tan-bg);
+		background-color: var(--lighter-tan-bg);
+    }
+
+    .navbar-toggle {
+      margin-top: 55px !important;
+      color: var(--light-green-bg)
+    }
+
+
+    .navbar-custom .nav li a {
+        font-size: 1.2rem;
     }
 
     .navbar-collapse{
-        margin-top:-50px;
-        background-color: var(--light-tan-bg);
+        margin-top: 100px;
+        background-color: var(--lighter-tan-bg);
         color:var(--body-text-color);
     }
 }
@@ -548,7 +560,7 @@ footer {
     html, body {
         width: 100%;
 	overflow-x: hidden;
-        background-color: #eafdff;
+        background-color: var(--green-bg);
     }
     .intro  {
         background: white;
