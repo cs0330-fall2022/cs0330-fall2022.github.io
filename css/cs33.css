@@ -6,10 +6,14 @@
   --heading-text-color: #240f02;
   --body-text-color: #2a1a03;
   --light-tan-bg: #d7bc72;
+  --lighter-tan-bg: #f0dca3;
   --green-bg: #cad9c9;
+  --light-green-bg: #9bb899;
 
   --camo-brown: #837957;
   --camo-gray: rgb(204 204 204);
+
+  --comic-red: #cc605f;
 }
 
 @font-face {
@@ -48,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h3{
     color: #282512;
-    text-shadow: 1px 2px 0px rgb(71 169 103 / 70%);
+    text-shadow: 1px 2px 0px rgb(64 92 73 / 70%);
 }
 
 p {
@@ -85,18 +89,18 @@ ul {
 /* Tables */
 table {
 
-    background-color: #cadaf5;
+    background-color: var(--light-green-bg);
     font-size: 1.1em;
     margin-bottom: 40px;
 }
 
 tr:nth-child(2n+1) {
-    background-color: #c9f2f3;
+    background-color: var(--lighter-tan-bg);
 }
 
 th {
     height: 3.5em;
-    background-color: #FED331;
+    background-color: var(--comic-red);
     font-size: 1.05em;
 
 }
@@ -198,7 +202,7 @@ td, th {
 }
 
 .info-box-opaque{
-    background-color: rgba(245, 245, 245, 0.95);
+    background-color: rgba(245, 245, 245, 0.97);
     display:flex;
     justify-content:center;
     border-radius: 5px;
@@ -211,8 +215,8 @@ td, th {
 }
 
 #course-info h3 {
-    color: #104eac;
-    text-shadow: 1px 2px 0px rgb(254, 211, 49, 0.7);
+  color: #2a2824;
+  text-shadow: 1px 2px 0px rgb(167 139 36 / 70%);
 }
 
 #course-info p,
@@ -240,7 +244,7 @@ td, th {
 #assignments a {
     color: var(--body-text-color);
     border-radius: 5px;
-    background-color: rgb(245,231,158);
+    background-color: rgb(233 233 233 / 50%);
     padding: 0px 4px;
 }
 
@@ -251,7 +255,7 @@ td, th {
 #lectures a {
     color: var(--body-text-color);
     border-radius: 5px;
-    background-color: rgb(245,231,158);
+    background-color: rgb(233 233 233 / 50%);
     padding: 0px 4px;
 }
 
@@ -323,7 +327,7 @@ td, th {
 }
 
 .section-title-img{
-    padding-top: 60px;
+    /* padding-top: 60px; */
     width: 100px;
     object-fit: contain;
 }
@@ -426,6 +430,10 @@ footer a {
     color: #5a5c5a;
 }
 
+.brand-heading {
+  padding-top:80px;
+}
+
 @media(min-width:768px) {
     .navbar-custom {
         padding: 8px 0;
@@ -438,7 +446,7 @@ footer a {
     }
     .top-nav-collapse {
         padding: 0;
-		background-color: var(--light-tan-bg);
+		background-color: var(--lighter-tan-bg);
         color:white;
     }
 }
@@ -471,7 +479,7 @@ footer a {
 }
 
 #docs-and-guides{
-    background-image:url('../img/starry.PNG');
+    background-image:url('../img/twdbg.jpg');
     background-size:600px;
 }
 
