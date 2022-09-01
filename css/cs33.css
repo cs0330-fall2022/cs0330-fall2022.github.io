@@ -340,8 +340,8 @@ td, th {
 }
 
 .section-title-img{
-    /* padding-top: 60px; */
-    width: 100px;
+    padding-top: 50px;
+    width: 140px;
     object-fit: contain;
 }
 
@@ -445,9 +445,9 @@ footer a {
     color: #5a5c5a;
 }
 
-.brand-heading {
-  padding-top:80px;
-}
+/* .brand-heading {
+  padding-top:20px;
+} */
 
 
 @media(min-width:768px) {
@@ -510,6 +510,10 @@ footer a {
         margin-top: 100px;
         background-color: var(--lighter-tan-bg);
         color:var(--body-text-color);
+    }
+
+    .section-title-img{
+        width: 100px;
     }
 }
 
