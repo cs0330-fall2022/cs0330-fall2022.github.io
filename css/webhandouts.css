@@ -1,0 +1,36 @@
+
+body {
+  font-family: Helvectica, sans-serif;
+  color: #474747;
+  line-height: 1.4rem;
+}
+
+
+.foldable {
+  outline: none;
+  border: none;
+  width: 90vw;
+  color: black;
+  text-align: left;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 10px auto;
+  padding: 10px;
+  background: #474747;
+  color: white;
+}
+
+.content {
+  display: none;
+  width: 90vw;
+  margin-left: 10px;
+}
+
+code {
+  max-width: 90vw;
+  overflow: wrap;
+}
+.sub {
+  background: grey;
+}

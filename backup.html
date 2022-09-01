@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A website for CS0330 students at Brown University">
+        <meta name="author" content="CS0330 TA Staff">
+
+        <title>CS0330 | Brown University</title>
+
+        <!-- CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/cs33.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="img/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <!-- <link href="http://fonts.googleapis.com/css?family=Lora|Montserrat:400,700" rel="stylesheet" type="text/css"> -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://use.typekit.net/ykv7sgo.css" rel="stylesheet" type="text/css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div id="fix-this" style = "overflow-x:hidden;">
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">     
+
+            <!-- Logo -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            <i style="color:black;" class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <!-- <i class="fa fa-code"></i> -->
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden"><a href="#page-top"></a></li>
+                    <li><a class="page-scroll" href="#course-info">Course Info</a></li>
+                    <li><a class="page-scroll" href="#assignments">Assignments</a></li>
+                    <li><a class="page-scroll" href="#lectures">Lectures</a></li>
+                    <li><a class="page-scroll" href="#hours">Hours</a></li>
+                    <li><a class="page-scroll" href="#staff">Staff</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+        </nav>
+
+        <!-- Intro Header -->
+        <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">
+                             Introduction to 
+                            Computer Systems
+                        </h1>
+                        <p class="intro-text">
+                            This course covers the organization of computer systems (in terms of storage units, caches, processors, and I/O controllers) and teaches you assembly and C language programming.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Course Information Section -->
+        <section id="course-info">
+        <div class="container content-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Course Information</h2>
+                </div>
+                <div class="col-md-7">
+                    <p>CS0330 is taught by <a href="http://www.cs.brown.edu/~twd/">Professor Tom Doeppner (twd)</a>. Lectures are held every Monday, Wednesday, and Friday, from 2:00 to 2:50 PM in Salomon Center DECI 101.</p>
+                    <p>The course is intended primarily for computer science students and computer engineers, though it is open to anyone with adequate preparation interested in learning the topics covered in the course announcement. It fulfills a core requirement for the A.B. and Sc.B. tracks in computer science, and is required for the Computer Engineering concentration.</p>
+                    <p>In order to take CS 33, you should have taken CS 15, CS 18 or CS 19 (or have Tom's permission). Familiarity with a C-like language (such as C++ or Java) will help you with this course. However, knowing C is not a prerequisite for the course.</p>
+                </div>
+                <div class="col-md-4 col-md-offset-1">
+                    <blockquote>"High-level computer architecture and systems programming. The course covers the organization of computer systems (in terms of storage units, caches, processors, and I/O controllers) and teaches students assembly-language programming and C language programming. Extensive programming exercises introduce students to systems-level programming on Linux systems, as well as to multithreaded programming with POSIX threads. Students will learn the basics of how compilers work and will be introduced to the functions of operating systems."</blockquote>
+                    <tagline> – Course Announcement</tagline>
+                </div>
+            </div>
+
+            <!-- Documents & Guides -->
+            <div class="row inset-box">
+                <div class="col-md-8 col-sm-8">
+                    <h3>Guides &amp; Documents</h3>
+                    <p>Check out the following useful documents for questions you have about course organization, code style, or tools we use.</p>
+                    <ul class="col-md-4">
+                        <li><a href="docs/docs/syllabus.pdf">Syllabus</a></li>
+            <li><a href="docs/docs/collab.pdf">Collaboration Policy</a></li>
+            <li><a href="docs/docs/hourspolicy.pdf">TA Hours Policy</a></li>
+                        <li><a href="https://goo.gl/forms/YSWzu3OVPWfMv74t1">Collaboration Policy & TA Hours Agreement</a></li>
+                    </ul>
+                    <ul class="col-md-4">
+                        <li><a href="docs/guides/cprimer.pdf">C Primer</a></li>
+            <li><a href="docs/guides/style.pdf">Style Guide</a></li>
+                        <!-- <li>Optimization in C</li> --> <!-- Link Unavailable -->
+            <!-- <li><a href="docs/guides/buffer3.pdf">Buffer 3 Guide*</a></li> -->
+                    </ul>
+                    <ul class="col-md-4">
+
+            <li><a href="docs/guides/gdb.pdf">GDB Guide</a></li>
+            <li><a href="docs/guides/x64_cheatsheet.pdf">x86-64 Guide</a></li>
+            <li><a href="docs/guides/tools.pdf">Tooling Guide</a></li>
+            <li><a href="docs/docs/logic.pdf">Logical Equivalences Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <h3>Quick links</h3>
+                    <ul>
+                        <li><a href="https://piazza.com/class/cs0330">Piazza</a> (ask and answer questions)</li>
+                        <li><a href="https://canvas.brown.edu/courses/1073659">Canvas</a> (grades)</li>
+                        <li><a href="https://goo.gl/forms/YBeWN7eqqC7AmVBA3">Give us anonymous feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Assignments Section -->
+        <section id="assignments">
+        <div class="container content-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Assignments</h2>
+                    <p>If you're looking for hours for projects or labs, please see <a class="page-scroll" href="#hours">hours &rarr;</a></p>
+
+                <!-- Projects -->
+                    <h3>Projects</h3>
+                    <p>All projects are due at 11:59 pm on the specified due date. To accept your handin, we must have a collaboration policy signed and dated. To check if you have turned one in, please check <a href="https://goo.gl/forms/YSWzu3OVPWfMv74t1">this form &rarr;</a></p>
+                    <table class="assignment">
+                        <tr><th>Name</th><th>Out</th><th>Due</th></tr>
+            <tr><td><!-- <a href="docs/proj/maze.pdf">Maze</a>-->Maze</td><td>9/6</td><td>9/18</td></tr>
+            <tr><td><!-- <a href="docs/proj/data.pdf">Data</a>/<a href="docs/proj/worked_example.pdf">Worked Example</a>-->Data / Worked Example</td><td>9/18</td><td>9/25</td></tr>
+            <tr><td><!--<a href="docs/proj/traps.pdf">Traps</a>-->Traps</td><td>9/25</td><td>10/2</td></tr>
+            <tr><td><!--<a href="docs/proj/buffer.pdf">Buffer</a>-->Buffer</td><td>10/2</td><td>10/9</td></tr>
+            <tr><td><!--<a href="docs/proj/stringsperf.pdf">Strings + Performance</a>-->Strings + Performance</td><td>10/9</td><td>10/18</td></tr>
+            <tr><td><!--<a href="docs/proj/shell1.pdf">Shell 1</a>-->Shell 1</td><td>10/18</td><td>10/28</td></tr>
+            <tr><td><!--<a href="docs/proj/shell2.pdf">Shell 2</a>-->Shell 2</td><td>10/28</td><td>11/6</td></tr>
+            <tr><td><!--<a href="docs/proj/malloc.pdf">Malloc</a>-->Malloc</td><td>11/6</td><td>11/25</td></tr>
+            <tr><td><!--<a href="docs/proj/database.pdf">Database</a>-->Database</td><td>11/25</td><td>12/13</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Labs -->
+                <div class="col-xs-12 col-md-6">
+                    <h3>Labs</h3>
+                    <p>Labs are released on Mondays. They will be done in pairs and can be completed on your own time or during lab hours. During lab hours, you will be able to work with others and get help from TAs. You must complete each lab and have it checked off by the end of the last lab hours prior to the release of the following week's lab<sup>*</sup>. Submissions during the week after that in which a lab was assigned will receive half credit.</p>
+                    <table class="assignment">
+                        <tr><th>Name</th><th>Out</th><th>Due</th></tr>
+            <tr><td><!--<a href="docs/labs/life.pdf">Lab 1: Life</a>-->Lab 1: Life</td><td>9/6</td><td>9/15</td></tr>
+            <tr><td><!--<a href="docs/labs/tools.pdf">Lab 2: Tools</a>-->Lab 2: Tools</td><td>9/16</td><td>9/22</td></tr>
+            <tr><td><!--<a href="docs/labs/x86_lab1.pdf">Lab 3: x86 Part 1</a>-->Lab 3: x86 Part 1</td><td>9/23</td><td>9/29</td></tr>
+            <tr><td><!--<a href="docs/labs/x86_lab2.pdf">Lab 4: x86 Part 2</a>-->Lab 4: x86 Part 2</td><td>9/30</td><td>10/6</td></tr>
+            <tr><td><!--<a href="docs/labs/profiling.pdf">Lab 5: Profiling</a>-->Lab 5: Profiling</td><td>10/7</td><td>10/17</td></tr>
+            <tr><td><!--<a href="docs/labs/makefiles.pdf">Lab 6: Makefiles</a>-->Lab 6: Makefiles</td><td>10/18</td><td>10/24</td></tr>
+            <tr><td><!--<a href="docs/labs/signals.pdf">Lab 7: Signals</a>-->Lab 7: Signals</td><td>10/25</td><td>11/3</td></tr>
+            <tr><td><!--<a href="docs/labs/alloc_lab.pdf">Lab 8: Alloc</a>-->Lab 8: Alloc</td><td>11/4</td><td>11/10</td></tr>
+            <tr><td><!--<a href="docs/labs/vm_lab.pdf">Lab 9: Virtual Memory</a>-->Lab 9: Virtual Memory</td><td>11/11</td><td>11/17</td></tr>
+            <tr><td><!--<a href="docs/labs/networking_lab.pdf">Lab 10: Networking</a>-->Lab 10: Networking</td><td>11/18</td><td>11/24</td></tr>
+            <tr><td><!--<a href="docs/labs/concurrency_1.pdf">Lab 11: Concurrency (Part One)</a>-->Lab 11: Concurrency Part 1</td><td>11/25</td><td>12/1</td></tr>
+            <tr><td><!--<a href="docs/labs/concurrency_2.pdf">Lab 12: Concurrency (Part Two)</a>-->Lab 12: Concurrency Part 2</td><td>12/2</td><td>12/8</td></tr>
+                    </table>
+                    <p><sup>*</sup>This means that the <a class="page-scroll" href="#hours">4-6pm lab on Sunday</a> is the last available slot to get your labs checked off for full credit. </p>
+                </div>
+                <!-- Homeworks -->
+                <div class="col-xs-12 col-md-6">
+                    <h3>Homeworks</h3>
+                    <p>Homeworks are required for graduate students taking the course, and optional for everyone else. Only homeworks submitted by graduate students will be graded. You can submit your homework through Canvas. If you have questions about the homework, please attend Tom's office hours.</p>
+                    <table class="assignment">
+                        <tr><th>Name</th><th>Out</th><th>Due</th><th>Supplementary Files</th></tr>
+            <tr><td><!--<a href="docs/hw/hw1.pdf">HW1</a>-->HW1</td><td>9/6</td><td>9/13</td><td></td></tr>
+            <tr><td><!--<a href="docs/hw/hw2.pdf">HW2</a>-->HW2</td><td>9/13</td><td>9/20</td><td></td></tr>
+            <tr><td><!--<a href="docs/hw/hw3.pdf">HW3</a>-->HW3</td><td>9/20</td><td>9/27</td><td></td></tr>
+            <tr><td><!--<a href="docs/hw/hw4.pdf">HW4</a>-->HW4</td><td>9/27</td><td>10/4</td><td></td></tr>
+            <tr><td><!--<a href="docs/hw/hw5.pdf">HW5</a>-->HW5</td><td>10/4</td><td>10/11</td><td></td></tr>
+            <tr><td><!--<a href="docs/hw/hw6.pdf">HW6</a>-->HW6</td><td>10/11</td><td>10/16</td><td><!--<a href="docs/hw/minmax.c" download>minmax.c</a></td>--></tr>
+            <tr><td><!--<a href="docs/hw/hw7.pdf">HW7</a>-->HW7</td><td>10/16</td><td>10/23</td><td></td></tr>
+            <tr><td><!--<a href="docs/hw/hw8.pdf">HW8</a>-->HW8</td><td>10/23</td><td>11/1</td><td></td></tr>
+            <tr><td><!--<a href="docs/hw/hw9.pdf">HW9</a>-->HW9</td><td>11/1</td><td>11/8</td><td></td></tr>
+            <tr><td><!--<a href="docs/hw/hw10.pdf">HW10</a>-->HW10</td><td>11/8</td><td>11/15</td><td></td></tr>
+            <tr><td><!--<a href="docs/hw/hw11.pdf">HW11</a>-->HW11</td><td>11/15</td><td>11/29</td><td></td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Lectures -->
+        <section id="lectures">
+            <div class="container content-section">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h2>Lectures</h2>
+                        <p>Lectures are held every Monday, Wednesday, and Friday, from 2 to 2:50 PM in Salomon DECI.</p>
+                        <table class="lecture">
+                <tr><th>Date</th><th>Topic</th><th>Readings</th><th>Notes</th><th>Recording</th><th>Code</th></tr>
+		<tr><td>Sept 4</td><td>Intro to CSCI 330; Intro to C</td><td></td><td></td><td></td></tr>
+                <tr><td>Sept 6</td><td>Intro to C</td><td></td><td></td><td></td></tr>
+                            <tr><td>Sept 9</td><td>Intro to C</td><td></td><td></td><td></td></tr>
+                            <tr><td>Sept 11</td><td>Intro to C</td><td></td><td></td><td></td></tr>
+                            <tr><td>Sept 13</td><td>Intro to C</td><td></td><td>[<!--<a href="lecture/05CIntro5.pdf">Notes</a>-->Notes][<!--<a href="lecture/05CIntro5X.pdf">Full</a>-->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Sept 16</td><td>Intro to C</td><td></td><td>[<!--<a href="lecture/06CIntro6.pdf">Notes</a>-->Notes][<!--<a href="lecture/06CIntro6X.pdf">Full</a>-->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Sept 18</td><td>Data Representation</td><td>Chapter 2</td><td>[<!--<a href="lecture/07datarep1.pdf">Notes</a>-->Notes][<!--<a href="lecture/07datarep1X.pdf">Full</a>-->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Sept 20</td><td>Data Representation</td><td>Chapter 2</td><td>[<!--<a href="lecture/08datarep2.pdf">Notes</a>-->Notes][<!--<a href="lecture/08datarep2X.pdf">Full</a>-->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Sept 23</td><td>Data Representation</td><td>Chapter 2</td><td>[<!--<a href="lecture/09datarep3AsmIntro.pdf">Notes</a>-->Notes][<!-- <a href="lecture/09datarep3AsmIntroX.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Sept 25</td><td>x86 Assembler Language</td><td>Sections 3.1, 3.2 </td><td>[<!-- <a href="lecture/10x861.pdf">Notes</a> -->Notes][<!-- <a href="lecture/10x861X.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Sept 27</td><td>x86 Assembler Language</td><td>Sections 3.4, 3.5</td><td>[<!-- <a href="lecture/11x862.pdf">Notes</a> -->Notes][<!-- <a href="lecture/11x862X.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Sept 30</td><td>x86 Assembler Language</td><td>Section 3.6</td><td>[<!-- <a href="lecture/12x863.pdf">Notes</a> -->Notes][<!-- <a href="lecture/12x863X.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Oct 2</td><td>x86 Assembler Language</td><td>Section 3.7</td><td>[<!-- <a href="lecture/13x864.pdf">Notes</a> -->Notes][<!-- <a href="lecture/13x864X.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Oct 4</td><td>x86 Assembler Language</td><td>Section 3.10</td><td>[<!-- <a href="lecture/14x865archopt1.pdf">Notes</a> -->Notes][<!-- <a href="lecture/14x865archopt1X.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Oct 7</td><td>Processor Arch. and Performance</td><td>Sections 5.1-5.6</td><td>[<!-- <a href="lecture/15archopt2.pdf">Notes</a> -->Notes][<!-- <a href="lecture/15archopt2X.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Oct 9</td><td>Memory Hierarchy I</td><td>Section 5.7-5.12</td><td>[<!-- <a href="lecture/16memhier1.pdf">Notes</a> -->Notes][<!-- <a href="lecture/16memhier1X.pdf">Full</a> -->Full]</td><td>[Video]</td><td></td></tr>
+                            <tr><td>Oct 11</td><td>Caching</td><td>Section 6.1-6.2</td><td>[<!-- <a href="lecture/17cache.pdf">Notes</a> -->Notes][<!-- <a href="lecture/17cacheX.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Oct 14</td><td>Holiday!</td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>Oct 16</td><td>Architecture and OS</td><td>Sections 8.1-8.4</td><td>[<!-- <a href="lecture/19OS.pdf">Notes</a> -->Notes][<!-- <a href="lecture/19OSX.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Oct 18</td><td>Shells and Files</td><td>Section 10.1</td><td>[<!-- <a href="lecture/20files1.pdf">Notes</a> -->Notes][<!-- <a href="lecture/20files1X.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Oct 21</td><td>Files</td><td>Sections 10.2-10.11</td><td>[<!-- <a href="lecture/21files2.pdf">Notes</a> -->Notes][<!-- <a href="lecture/21files2X.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Oct 23</td><td>Signals</td><td>Sections 8.5-8.6</td><td>[<!-- <a href="lecture/22signals1.pdf">Notes</a> -->Notes][<!-- <a href="lecture/22signals1X.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Oct 25</td><td>Signals</td><td></td><td>[<!-- <a href="lecture/23signals2.pdf">Notes</a> -->Notes][<!-- <a href="lecture/23signals2X.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Oct 28</td><td>Memory Hierarchy II</td><td>Sections 6.4-6.5</td><td>[<!-- <a href="lecture/18memhier2.pdf">Notes</a> -->Notes][<!-- <a href="lecture/18memhier2X.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Oct 30</td><td>Linking and Loading</td><td>Section 6.3</td><td>[<!-- <a href="lecture/24link.pdf">Notes</a> -->Notes][<!-- <a href="lecture/24linkX.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Nov 1</td><td>Memory Management</td><td>Section 7.1-7.9</td><td>[<!-- <a href="lecture/25StorageIntro.pdf">Notes</a> -->Notes][<!-- <a href="lecture/25StorageIntroX.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Nov 4</td><td>Memory Management</td><td>Section 9.9</td><td>[<!-- <a href="lecture/26StorageAlloc.pdf">Notes</a> -->Notes][<!-- <a href="lecture/26StorageAllocX.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Nov 6</td><td>Virtual Memory</td><td>Section 9.9</td><td>[<!-- <a href="lecture/27VM.pdf">Notes</a> -->Notes][<!-- <a href="lecture/27VMX.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Nov 8</td><td>Virtual Memory</td><td>Sections 9.1, 9.2, 9.6, 9.8</td><td>[<!-- <a href="lecture/28library.pdf">Notes</a> -->Notes][<<!-- a href="lecture/28libraryX.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Nov 11</td><td>Libraries</td><td>Sections 7.10-7.13</td><td>[<!-- <a href="lecture/28library.pdf">Notes</a> -->Notes][<!-- <a href="lecture/28libraryX.pdf">Full</a> -->Full]</td><td>[Video]</td></tr>
+                            <tr><td>Nov 13</td><td>Network Programming</td><td>Sections 11.1-11.4</td><td>[<!-- <a href="lecture/30network1.pdf">Notes</a> -->Notes][<!-- <a href="lecture/30network1X.pdf">Full</a> -->Full]</td><td>[Video]</td><td><!-- [<a href="docs/code/Nov14LectureCode.zip">Code</a>] --></td></tr>
+                            <tr><td>Nov 15</td><td>Network Programming</td><td></td><td>[<!-- <a href="lecture/31network2.pdf">Notes</a> -->Notes][<!-- <a href="lecture/31network2X.pdf">Full</a> -->Full]</td><td>[Video]</td><td></td></tr>
+                            <tr><td>Nov 18</td><td>Concurrent Programming</td><td>Chapter 12</td><td>[<!-- <a href="lecture/32Threads1.pdf">Notes</a> -->Notes][<!-- <a href="lecture/32Threads1X.pdf">Full</a> -->Full]</td><td>[Video]</td><td></td></tr>
+                            <tr><td>Nov 20</td><td>Concurrent Programming</td><td></td><td>[<!-- <a href="lecture/33Threads2.pdf">Notes</a> -->Notes][<!-- <a href="lecture/33Threads2X.pdf">Full</a> -->Full]</td><td>[Video]</td><td></td></tr>
+                            <tr><td>Nov 22</td><td>Concurrent Programming</td><td></td><td>[<!-- <a href="lecture/34Threads3.pdf">Notes</a> -->Notes][<!-- <a href="lecture/34Threads3X.pdf">Full</a> -->Full]</td><td>[Video]</td><td></td></tr>
+                            <tr><td>Nov 25</td><td>Concurrent Programming</td><td></td><td>[<!-- <a href="lecture/35Threads4.pdf">Notes</a> -->Notes][<!-- <a href="lecture/35Threads4X.pdf">Full</a> -->Full]</td><td>[Video]</td><td></td></tr>
+                            <tr><td>Nov 27</td><td>Holiday!</td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>Nov 29</td><td>Holiday!</td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>Dec 2</td><td>Concurrent Programming</td><td></td><td>[<!-- <a href="lecture/36Threads5.pdf">Notes</a> -->Notes][<!-- <a href="lecture/36Threads5X.pdf">Full</a> -->Full]</td><td>[Video]</td><td></td></tr>
+                            <tr><td>Dec 4</td><td>Concurrent Programming</td><td></td><td>[<!-- <a href="lecture/37Threads6.pdf">Notes</a> -->Notes][<!-- <a href="lecture/37Threads6X.pdf">Full</a> -->Full]</td><td>[Video]</td><td></td></tr>
+                            <tr><td>Dec 6</td><td>Conclusion</td><td></td><td>[<!-- <a href="lecture/38Fini.pdf">Notes</a> -->Notes][<!-- <a href="lecture/38FiniX.pdf">Full</a> -->Full]</td><td>[Video]</td><td></td></tr>
+                        </table>
+
+                        <h3>Project Gear Ups</h3>
+                        <p>
+                            Looking for guidance as you start your project each week? Want a refresher on what material has been covered and an outline of what you will be writing? Come to our Project Gear Up Sessions! We’ll also be going over how to use the demo(s) and tester(s) and other relevant scripts for each project!
+                        <p>
+                            Projects are released on Wednesdays, so TAs will be hosting Gear Up sessions every Thursday after a project is released. Location and time TBD.
+                        </p>
+
+                        <table class="gear-up">
+                            <tr><th>Date</th><th>Topic</th><th>Slides</th><th>Video</th></tr>
+                            <tr><td>TBD</td><td>Maze</td><td><!--<a href="docs/gearups/maze.pdf">Slides</a>-->Slides</td><td></td></tr>
+                            <tr><td>TBD</td><td>Data</td><td><!--<a href="docs/gearups/data.pdf">Slides</a>-->Slides</td><td></td></tr>
+                            <tr><td>TBD</td><td>Traps</td><td><!--<a href="docs/gearups/traps.pdf">Slides</a>-->Slides</td><td></td></tr>
+                            <tr><td>TBD</td><td>Buffer</td><td><!--<a href="docs/gearups/buffer.pdf">Slides</a>-->Slides</td><td></tr>
+                            <tr><td>TBD</td><td>Strings + Performance</td><td><!--<a href="docs/gearups/stringsperf.pdf">Slides</a>-->Slides</td><td></td></tr>
+                            <tr><td>TBD</td><td>Shell 1</td><td><!--<a href="docs/gearups/shell_1.pdf">Slides</a>-->Slides</td><td></td></tr>
+                            <tr><td>TBD</td><td>Shell 2</td><td><!--<a href="docs/gearups/shell_2.pdf">Slides</a>-->Slides</td><td></td></tr>
+                            <tr><td>TBD</td><td>Malloc</td><td><!--<a href="docs/gearups/malloc.pdf">Slides</a>-->Slides</td><td></td></tr>
+                            <tr><td>TBD</td><td>Database</td><td><!--<a href="docs/gearups/database.pdf">Slides</a>-->Slides</td><td></td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Hours -->
+        <section id="hours">
+        <div class="container content-section">
+            <h2>Hours</h2>
+            <div class="row">
+
+                <!-- Regular hours -->
+                <div class="col-md-12">
+                    <h3>Tom's Office Hours</h3>
+                    <p>Professor Doeppner's hours will be held in CIT 405.</p>
+                    <table class="tom-hours">
+                        <tr><td>Monday</td><td>3-4pm</td></tr>
+                        <tr><td>Wednesday</td><td>3-4pm</td></tr>
+                        <tr><td>Friday</td><td>4-5pm</td></tr>
+                    </table>
+
+                    <h3>TA Hours</h3>
+            <p>During TA hours, you'll be able to get help from TAs with course concepts as well as project and lab-specific questions. Note that you may not ask questions about labs in project hours (and vice versa) or have a lab checked off during project hours. During conceptual hours, you may not bring up code-specific questions.</p>
+
+            <iframe class="iframe" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=YnJvd24uZWR1X2p0cjkydDRxcTlkbnNuNmVxM2plc2poYWo4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%237CB342&amp;mode=WEEK" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                   <!--  <h3>Lab Hours</h3>
+                    <p>During lab hours, you will be able to work with others and ask TAs for help finishing lab. Please show up to one of the following times to work on a lab. Most labs are autograded, but for certain labs you will have to be checked off at these hours too. Note that TAs will not answer project-related questions during lab hours.</p>
+                    <iframe class = "iframecal" src="https://calendar.google.com/calendar/b/1/embed?title=Labs&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=brown.edu_emmv05ed9pbh8ftjq6sgmb6gks%40group.calendar.google.com&amp;color=%238D6F47&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Staff -->
+        <section id="staff">
+        <div class="container content-section staff">
+            <div class="row">
+            <div class="col-md-12">
+                <h2>Staff</h2>
+                <h4>Professor</h4>
+                <div class="ta">
+                    <div id="twd"></div>
+                    <p>
+                        Tom Doeppner<br>
+                        (twd)
+                    </p>
+                </div>
+                <h4>HTAs <em>(cs0330headtas@lists.brown.edu)</em></h4>
+                <div class="ta">
+                    <div id="ibigio"></div>
+                    <p>
+                        Ilan Bigio <br>
+                        (ibigio)
+                    </p>
+                    </div>
+                <div class="ta">
+                    <div id="bcho1"></div>
+                    <p>
+                        Peter Cho<br>
+                        (bcho1)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="kdonahu2"></div>
+                    <p>
+                        Kielan Donahue<br>
+                        (kdonahu2)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="lphinise"></div>
+                    <p>
+                        Lisa Phinisee<br>
+                        (lphinise)
+                    </p>
+                </div>
+                <h4>UTAs <em>(cs0330tas@lists.brown.edu)</em></h4>
+                <div class="ta">
+                    <div id="abarzinp"></div>
+                    <p>
+                        Ariana Barzinpour   
+                        (abarzinp)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="cnelso13"></div>
+                    <p>
+                        Casey Nelson    
+                        (cnelso13)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="cavalos1"></div>
+                    <p>
+                        Chris Avalos    
+                        (cavalos1)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="cwang85"></div>
+                    <p>
+                        Christine Wang  
+                        (cwang85)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="czborows"></div>
+                    <p>
+                        Conrad Zborowski    
+                        (czborows)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="dpark20"></div>
+                    <p>
+                        Daniel Park 
+                        (dpark20)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="dlichen"></div>
+                    <p>
+                        Daphne Li-Chen
+                        (dlichen)
+                    </p>
+                </div> 
+                <div class="ta">
+                    <div id="dcharata"></div>
+                    <p>
+                        David Charatan  
+                        (dcharata)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="dpromise"></div>
+                    <p>
+                        David Promisel  
+                        (dpromise)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="dgarci14"></div>
+                    <p>
+                        Delmy Garcia    
+                        (dgarci14)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="esattler"></div>
+                    <p>
+                        Ethan Sattler   
+                        (esattler)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="evelasq2"></div>
+                    <p>
+                        Evan Velasquez  
+                        (evelasq2)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="gkern1"></div>
+                    <p>
+                        Garret Kern 
+                        (gkern1)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="glee43"></div>
+                    <p>
+                        George Lee  
+                        (glee43)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="gbramley"></div>
+                    <p>
+                        Grace Bramley-Simmons
+                        (gbramley)
+                    </p>
+                </div>  
+                <div class="ta">
+                    <div id="gcantien"></div>
+                    <p>
+                        Gus Cantieni    
+                        (gcantien)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="imilefch"></div>
+                    <p>
+                        Isa Milefchik   
+                        (imilefch)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="jhuddle1"></div>
+                    <p>
+                        Jarett Huddleston   
+                        (jhuddle1)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="jfischma"></div>
+                    <p>
+                        Jason Fischman  
+                        (jfischma)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="jludmir"></div>
+                    <p>
+                        Jason Ludmir    
+                        (jludmir)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="kkwan"></div>
+                    <p>
+                        Katherine Kwan  
+                        (kkwan)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="mamoush"></div>
+                    <p>
+                        Mohammad Amoush 
+                        (mamoush)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="mmakhlou"></div>
+                    <p>
+                        Moustafa Makhlouf   
+                        (mmakhlou)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="naldroub"></div>
+                    <p>
+                        Nazem Aldroubi  
+                        (naldroub)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="pdasgup1"></div>
+                    <p>
+                        Prithu Dasgupta 
+                        (pdasgup1)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="rwang48"></div>
+                    <p>
+                        Rachel Wang 
+                        (rwang48)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="knimmaga"></div>
+                    <p>
+                        Raghu Nimmagadda    
+                        (knimmaga)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="rdey2"></div>
+                    <p>
+                        Rahul Dey   
+                        (rdey2)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="rsrivas2"></div>
+                    <p>
+                        Rudra Srivastava    
+                        (rsrivas2)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="sjain16"></div>
+                    <p>
+                        Shelley Jain    
+                        (sjain16)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="ssu6"></div>
+                    <p>
+                        Star Su 
+                        (ssu6)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="khousto1"></div>
+                    <p>
+                        Symone Houston  
+                        (khousto1)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="tpark10"></div>
+                    <p>
+                        Timothy Park    
+                        (tpark10)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="wadrianc"></div>
+                    <p>
+                        William Adriance    
+                        (wadrianc)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="wjurayj"></div>
+                    <p>
+                        William Jurayj  
+                        (wjurayj)
+                    </p>
+                </div>
+                <div class="ta">
+                    <div id="zbiegl"></div>
+                    <p>
+                        Zsozso Biegl    
+                        (zbiegl)
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Hidden images - TA pictures are loaded here to reduce
+        lag when a user hovers over their character picture -->
+        <div id="hidden-imgs" style="display: none;"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+        <div class="container text-center">
+            <p>
+            &copy; 2019 CS0330 TA Staff
+            <span class="spacing">|</span>
+            <a href="http://cs.brown.edu/~twd/twdUnderwater/index.html#">Underwater photos by Tom Doeppner</a>
+            <span class="spacing">|</span>
+            <a href="http://cs.brown.edu">Computer Science Department</a>
+            <span class="spacing">|</span>
+            <a href="http://brown.edu">Brown University</a>
+            </p>
+        </div>
+        </footer>
+
+        <!-- Javascript files -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/cs33.js"></script>
+    </div>
+    </body>
+</html>

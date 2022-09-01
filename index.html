@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="img/bus_icon.png" type="image/x-icon" />
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A website for CS0330 students at Brown University">
+    <meta name="author" content="CS0330 TA Staff">
+
+    <title>CS0330 | Brown University</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/cs33.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="img/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="http://fonts.googleapis.com/css?family=Lora|Montserrat:400,700" rel="stylesheet" type="text/css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://use.typekit.net/ykv7sgo.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div id="fix-this" style="overflow-x:hidden;">
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <a href="#" class="navbar-brand course-logo-font">TWD - The Walking Doeppner</a>
+            <div class="container">
+
+                <!-- Logo -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-main-collapse">
+                        <i style="color:#faec30;" class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <!-- <i class="fa fa-code"></i> -->
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse pull-right">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden"><a href="#page-top"></a></li>
+                        <li><a class="page-scroll" href="#course-info">Course Info</a></li>
+                        <li><a class="page-scroll" href="#docs-and-guides">Resources</a></li>
+                        <li><a class="page-scroll" href="#assignments">Assignments</a></li>
+                        <li><a class="page-scroll" href="#lectures">Lectures</a></li>
+                        <li><a class="page-scroll" href="#hours">Hours</a></li>
+                        <li><a class="page-scroll" href="#staff">Staff</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Intro Header -->
+        <header class="intro">
+            <div class="intro-body">
+                <div class="container">
+                    <div class="col col-md-16"></div>
+                    <img class="section-title-img" src="img/icons8-zombie-64.png">
+                    <h1 class="brand-heading">
+                        Introduction to
+                        Computer Systems
+                    </h1>
+                    <p class="intro-body">
+                        This course covers the organization of computer systems (in terms of storage units,
+                        caches, processors, and I/O controllers) and teaches you assembly and C language
+                        programming.
+                    </p>
+                </div>
+                <div class="col col-md-8 justify-content-center" style="width:100%;">
+                    <img id="home-img" onclick="changeImg()" class="intro-img mySlides"
+                        src="img/zombie-logo.png" style="border-radius:5px;height:75vh">
+                </div>
+            </div>
+    </div>
+    </header>
+    <!-- Course Information Section -->
+    <section id="course-info">
+        <div class="container content-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-title">Course Information <img class="section-title-img" src="img/bus_icon.png">
+                    </h2>
+                    <!--        <section id="course-info">-->
+                    <!--            <div class="row section-header">-->
+                    <!--                <div class="col-md-6 info-box-opaque">-->
+                    <!--                    <h2>Course Information</h2>-->
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <p>CS0330 is taught by <a href="http://www.cs.brown.edu/~twd/">Professor Tom Doeppner
+                                (twd)</a>. Lectures are held every Monday, Wednesday, and Friday, from 2:00 to 2:50
+                            PM at Salomon Center DECI, and are also recorded on panopto and will be uploaded after each lecture.</p>
+                        <p>The course is intended primarily for computer science students and computer engineers,
+                            though it is open to anyone with adequate preparation interested in learning the topics
+                            covered in the course announcement. It fulfills a core requirement for the A.B. and
+                            Sc.B. tracks in computer science, and is required for the Computer Engineering
+                            concentration.</p>
+                        <p>In order to take CS 33, you should have taken CS 15, CS 18 or CS 19 (or have Tom's
+                            permission). Familiarity with a C-like language (such as C++ or Java) will help you with
+                            this course. However, knowing C is not a prerequisite for the course.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <blockquote>"High-level computer architecture and systems programming. The course covers the
+                            organization of computer systems (in terms of storage units, caches, processors, and I/O
+                            controllers) and teaches students assembly-language programming and C language
+                            programming. Extensive programming exercises introduce students to systems-level
+                            programming on Linux systems, as well as to multithreaded programming with POSIX
+                            threads. Students will learn the basics of how compilers work and will be introduced to
+                            the functions of operating systems."</blockquote>
+                        <tagline> – Course Announcement</tagline>
+                    </div>
+                </div>
+
+                <!-- Documents & Guides -->
+                <div id="docs-and-guides" class="row inset-box">
+                    <div class="info-box-opaque">
+                        <div class="col-md-8 col-sm-12">
+                            <h3>Guides &amp; Documents</h3>
+                            <p>Check out the following useful documents for questions you have about course
+                                organization, code style, or tools we use.</p>
+                            <ul class="col-md-4">
+                                <strong class="resources-header">Policies</strong>
+                                <li><a
+                                        href="https://docs.google.com/document/d/15nnMJFGpt4wXZohI1ImzZJE-PmqKpy8GEyk-_uqclp8/edit">Syllabus</a>
+                                </li>
+                                <li><a
+                                        href="https://docs.google.com/document/d/1wEBDvxjsD4QjM-mTKbr8B86LFJZC8i-Hlg4LF2utIsI/edit?usp=sharing">Collaboration
+                                        Policy</a></li>
+                                <li><a
+                                        href="https://docs.google.com/document/d/1GicjpTwA42__-IVWY9nVOe1_ruXdXfyrDwjYWZhdIh0/edit?usp=sharing">TA
+                                        Hours Policy</a></li>
+
+                                <li><a
+                                        href="https://forms.gle/DjJ8qq7z9nZL7d7u7">Collaboration
+                                        Policy & TA Hours Agreement</a></li>
+                            </ul>
+                            <ul class="col-md-4">
+                                <strong class="resources-header">C</strong>
+                                <li><a href="https://docs.google.com/document/d/1Mp-DNmMQMS09UjSjN7DWlACf8NUTSWh9d9goDBut4q8/edit?usp=sharing">C Primer</a></li>
+                                <li><a href="https://docs.google.com/document/d/1nyRSuJBoxQCCkqY07Gte8pv6HXpO77gGMQRET1Zlx7E/edit?usp=sharing">Style Guide</a></li>
+                                <li><a href="https://docs.google.com/document/d/16I4CiBSA5Yi0nebiYq01J4PaJovIkleT_helcKYI6a4/edit?usp=sharing">GDB Cheatsheet</a></li>
+                                <li><a href="https://docs.google.com/document/d/1JyQZ2-KzddhP_hQFNtlFQXgcVDlqLRLFPSe99cPtHLY/edit?usp=sharing">Verbose GDB Guide</a></li>
+                                <li><a href="https://docs.google.com/document/d/1n-APjc8jsWM6fkfjZHlQY8Qi9-nqyUWhzDD1UkEKV0k/edit?usp=sharing">x86-64 Guide</a></li>
+                                <li><a href="https://docs.google.com/document/d/1NGwrPXJkRh8WOpxi17myMVNBGgETKnoU0ho3qDlTXxI/edit?usp=sharing">Tooling Guide</a></li>
+                                <li><a href="https://docs.google.com/document/d/1UbhSgRQgiu_tb7o8lP5wC6BTNlmDDJTfRlps37fVygA/edit?usp=sharing">Bash Primer</a></li>
+				<li><a href="https://replit.com/languages/c" target="_blank">Online C Compiler</a></li>
+                            </ul>
+                            <ul class="col-md-4">
+                                <strong class="resources-header">Course Logistics</strong>
+                                <li><a href="https://docs.google.com/document/d/1jknx6Lr9ne1Htj2aaEQyR4g-_sPPJnFYIvufeGgXTdE/edit?usp=sharing">Github & Gradescope Guide</a></li>
+                                <li><a href="https://docs.google.com/document/d/1smtXZF_3lgogzD4JJzcsmnHJaxJcw2w9UDjidpJNKRM/edit?usp=sharing">Developing Locally Guide</a></li>
+                                <li><a href="https://brown.zoom.us/rec/share/BYpHT7q49hyNuLujCpjPjqELx9jkN3V2jzVTBZM1r41zkx2NSNOrin8DHr9Y6L7N.9Bq0Iq-KvlgEFsYR?startTime=1631750441000" target="_blank">Set Up/GDB/Git Gear Up (Recording)</a></li>
+                                <li><a href="https://docs.google.com/document/d/1RrbnsugOnMWA7NQgcB62BroDtzeC2pbH2D64ez4FqAM/edit?usp=sharing">Project Survival Guide</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <h3>Quick links</h3>
+                            <ul>
+                                <li><a href="https://edstem.org/us/courses/13193/discussion/">Ed (ask and answer questions)</a></li>
+                                <li><a href="https://canvas.brown.edu/courses/1085643">Canvas (grades)</a></li>
+                                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSejKrAnIJ760e4S5ynyUL-eRMdEThIphnTeXhJuh-0T-IuwsA/viewform">Anonymous Feedback Form</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Assignments Section -->
+    <section id="assignments">
+        <div class="container content-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-title">Assignments <img class="section-title-img" src="img/bus_icon.png">
+                    </h2>
+                    <p>If you're looking for hours for projects or labs, please see <a class="page-scroll"
+                            href="#hours">hours &rarr;</a></p>
+
+                    <!-- Projects -->
+                    <h3>Projects</h3>
+                    <p>All projects are released 3:00 pm EST on specified out day and due at 11:59 pm EST on the specified due date. The late deadline is 6 days after normal deadline. To accept your handin, we
+                        must have a collaboration policy signed and dated. To check if you have turned one in,
+                        please check <a href="https://forms.gle/DjJ8qq7z9nZL7d7u7">this form &rarr;</a></p>
+                    <table class="assignment">
+                        <tr>
+                            <th>Name</th>
+                            <th>Out</th>
+                            <th>Due</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href=https://docs.google.com/document/d/1zmuEwOYzp3TY7nBH14lmK6e2g7I9xAIVu58YVypgXL8/edit?usp=sharing
+                                   target=“_blank”>Maze</a>
+                                   <!-- Maze -->
+                                </td>
+                            <td>9/10</td>
+                            <td>9/22</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1M9iXa7b4UIxJFhWxNrQ3ss2Oo65j6NFQYFfX5Kma-Oo/edit?usp=sharing" target="_blank">Data</a> / <a href="https://docs.google.com/document/d/1BnLfpIptiLWJEbGgcx3cmeBgl4qN_KOWZvdueiDo8f8/edit?usp=sharing" target="_blank">Example</a></td>
+                            <td>9/22</td>
+                            <td>9/29</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1o9Ns4MwiFdFeb2FKgRKVow-3fPWxsVyYEYaoQA5YOL0/edit?usp=sharing" target="_blank">Traps</a></td>
+                            <td>9/29</td>
+                            <td>10/6</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1o4Wn7ueAXeUwKmDCShK41e9FLObQR9FeNbDPk6hJRGk/edit?usp=sharing" target="_blank">Buffer</a></td>
+                            <td>10/6</td>
+                            <td>10/18</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1q1yi34Hu4wHQ8wDeSrLnQA6-ZcP4xg3oHgaT_ygjVIU/edit?usp=sharing" target="_blank">Shell 1</a></td>
+                            <td>10/25</td>
+                            <td>11/1</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1KdE8hC8h8huQhXUIFT3rDfuJTgPLh9Wxgwtl3wAOp40/edit?usp=sharing" target="_blank">Shell 2</a></td>
+                            <td>11/1</td>
+                            <td>11/8</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1bSPPZIhSt_SmTGMnQWhW2jfzSvHkMhNcyCw95NWRKkk/edit?usp=sharing" target="_blank">Malloc</a></td>
+                            <td>11/10</td>
+                            <td>12/1</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1S9kV5AhcToPW2dEpOh_8zMH2aRn3wmw_GeJJS2nrA0k/edit?usp=sharing" target="_blank">Database</a></td>
+                            <td>12/1</td>
+                            <td>12/17</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Labs -->
+                <div class="col-xs-12 col-md-6">
+                    <h3>Labs</h3>
+                    <p>Labs are released on Mondays 12 am EST – besides the first lab which is released on a Friday. They can be done individually or in pairs and can be
+                        completed on your own time or during lab hours. During lab hours, you will be able to work
+                        with others and get help from TAs. You must complete each lab and have it submitted via
+                        Gradescope by 11:59 pm EST the night they are due. The late deadline is 1 week after normal deadline. Submissions during the week after that in
+                        which a lab was assigned will receive half credit.</p>
+                    <table class="assignment">
+                        <tr>
+                            <th>Name</th>
+                            <th>Out</th>
+                            <th>Due</th>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1mnIXsDJI10L9g-Y3nnjqUfBe-OY8L59Xu8Tpy75U53M/edit?usp=sharing"
+                                   target="_blank">Lab 1: Setup and GDB</a></td>
+                            <td>9/10</td>
+                            <td>9/19</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1v6zna-vsVpX46s4fL9RVboclGpcAA649iyzWXM_fvNU/edit?usp=sharing" target="_blank">Lab 2: Strings and Parsing</a></td>
+                            <td>9/20</td>
+                            <td>9/26</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1B3GnfkYfdJr0InhpfpCL1Q-6hkRSM6CCm1Q_aWd1j70/edit?usp=sharing" target="_blank">Lab 3: atoi</a></td>
+                            <td>9/27</td>
+                            <td>10/5</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1DWqRF7oNaoTgKTK14MUvLRwbFZnI3sIQ6KcfmEQ-i8w/edit?usp=sharing" target="_blank">Lab 4: Makefiles</a></td>
+                            <td>10/4</td>
+                            <td>10/10</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1L9J6gevghfyS7CzwDzJqMABdVPQL4OQSBW7l6iJ-Rlk/" target="_blank">Lab 5: Performance</a></td>
+                            <td>10/18</td>
+                            <td>10/24</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1nQFVGf0pR82BqsAmOxHEzYNjMYjBRA2Et6zg6YIM7_Q/edit?usp=sharing" target="_blank">Lab 6: Signals</a></td>
+                            <td>11/1</td>
+                            <td>11/7</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1WwcozBlBNgp5_nrn_ggALc_rdFj1JMPJ/edit?usp=drivesdk&ouid=114681058289990454375&rtpof=true&sd=true" target="_blank">Lab 7: Alloc</a></td>
+                            <td>11/8</td>
+                            <td>11/14</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1hdqwbz2PKjrOCcij4n9u55EL5sqfRgWv39gfgL9Kke0/edit?usp=sharing" target="_blank">Lab 8: Network</a></td>
+                            <td>11/15</td>
+                            <td>11/21</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://docs.google.com/document/d/1xfuh1M4VmGj4SYYKiFsRdFCBggU5CPbpX0wUdWmRY3k/edit?usp=sharing" target="_blank">Lab 9: Concurrency</a></td>
+                            <td>11/29</td>
+                            <td>12/5</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Homeworks -->
+                <div class="col-xs-12 col-md-6">
+                    <h3>Homeworks</h3>
+                    <p>Homeworks are required for graduate students taking the course, and optional for everyone
+                        else. Only homeworks submitted by graduate students will be graded. You can submit your
+                        homework through Canvas. If you have questions about the homework, please attend Tom's
+                        office hours.</p>
+                    <table class="assignment">
+                        <tr>
+                            <th>Name</th>
+                            <th>Out</th>
+                            <th>Due</th>
+                        </tr>
+                        <tr>
+                            <td><a href="docs/hw/hw1.pdf" target="_blank">HW1</a> / <a href="docs/hw/hw1_ans.pdf" target="_blank">Solution</a></td>
+                            <td>9/10</td>
+                            <td>9/17</td>
+
+                        </tr>
+                        <tr>
+                            <td><a href="docs/hw/hw2.pdf" target="_blank">HW2</a> / <a href="docs/hw/hw2_ans.pdf" target="_blank">Solution</a></td>
+                            <td>9/17</td>
+                            <td>9/24</td>
+
+                        </tr>
+                        <tr>
+                            <td><a href="docs/hw/hw3.pdf" target="_blank">HW3</a> / <a href="docs/hw/hw3_ans.pdf" target="_blank">Solution</a></td>
+                            <td>9/24</td>
+                            <td>10/1</td>
+                        </tr>
+                        <tr>
+                            <td><a href="docs/hw/hw4.pdf" target="_blank">HW4</a> / <a href="docs/hw/hw4_ans.pdf" target="_blank">Solution</a></td>
+                            <td>10/1</td>
+                            <td>10/8</td>
+                        </tr>
+                        <tr>
+                            <td><a href="docs/hw/hw5.pdf" target="_blank">HW5</a> / <a href="docs/hw/hw5_ans.pdf" target="_blank">Solution</a></td>
+                            <td>10/8</td>
+                            <td>10/22</td>
+                        </tr>
+                        <tr>
+                            <td><a href="docs/hw/hw6.pdf" target="_blank">HW6</a> / <a href="docs/hw/hw6_ans.pdf" target="_blank">Solution</a></td>
+                            <td>10/22</td>
+                            <td>10/29</td>
+                        </tr>
+                        <tr>
+                            <td><a href="docs/hw/hw7.pdf" target="_blank">HW7</a> / <a href="docs/hw/hw7_ans.pdf" target="_blank">Solution</a></td>
+                            <td>10/29</td>
+                            <td>11/5</td>
+                        </tr>
+                        <tr>
+                            <td><a href="docs/hw/hw8.pdf" target="_blank">HW8</a> / Solution</td>
+                            <td>11/5</td>
+                            <td>11/12</td>
+                        </tr>
+                        <tr>
+                            <td><a href="docs/hw/hw9.pdf" target="_blank">HW9</a> / Solution</td>
+                            <td>11/12</td>
+                            <td>11/19</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lectures -->
+    <section id="lectures">
+        <div class="container content-section">
+            <div class="row">
+                <div class="col-md-10">
+                    <h2 class="section-title">Lectures <img class="section-title-img" src="img/bus_icon.png"></h2>
+                    <p>Lectures are held every Monday, Wednesday, and Friday at Salomon Center DECI. They are recorded on Panopto and will be uploaded after each lecture.</p>
+                    <table class="lecture">
+                        <tr>
+                            <th></th>
+                            <th>Date<span style="white-space: pre;"> </span></th>
+                            <th>Topic</th>
+                            <th>Readings</th>
+                            <th>Notes</th>
+                            <th>Recording</th>
+                            <th>Take Away Questions</th>
+                            <th>Code</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Sept 8</td>
+                            <td>Intro to CSCI 330; Intro to C</td>
+                            <td></td>
+                            <td><a href="lecture/01Intro.pdf" target="_blank">Slides</a><br><a href="lecture/01IntroX.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ccf45211-0f2c-4896-b7bc-ad7501226074"
+                                    target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/165OqqlQXiB8v_7EtGlHl6dP_2KCYee85XVOOp5NXtrU/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1AONnCcSpqmuyXzxSRNbIfunvHkyeDT9zG0zR6zGRcJg/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Sep 10</td>
+                            <td>Intro to C</td>
+                            <td></td>
+                            <td><a href="lecture/02CIntro2.pdf" target="_blank">Slides</a><br><a href="lecture/02CIntro2X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5dabf6d9-98c2-4160-a492-ad75012260ae"
+                                   target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1nMuK-VpHutiuOdcvKLYw-T-Pk1L1yNXbr66MkSSRJfg/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1lwd6vzwFm9qsjIZQeS8dNMB5CyZGZJbQQysIUAMw688/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Sept 13</td>
+                            <td>Intro to C</td>
+                            <td></td>
+                            <td><a href="lecture/03CIntro3.pdf" target="_blank">Slides</a><br><a href="lecture/03CIntro3X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8722a742-e848-42a6-9600-ad75012260c1"
+                                   target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1USmycvCyj794HYgXiGRu62VgEdEmLIyngxwI8orzBQ0/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1G0zz45jZSfThGR6AhZISlsNcoVKwXPs-96m_QgZh6YU/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Sept 15</td>
+                            <td>Intro to C</td>
+                            <td></td>
+                            <td><a href="lecture/04CIntro4.pdf" target="_blank">Slides</a><br><a href="lecture/04CIntro4X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=195feb64-1329-4781-8acd-ad75012260d5" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/103J1Io2DEZXcd1h_PEvcKpNzXtbk9v5FYL4h7CpJgfs/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1JYWrYdV79V8CZiG0GiokaPmLf6b59wjawS_EwSEzU7M/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Sept 17</td>
+                            <td>Intro to C</td>
+                            <td></td>
+                            <td><a href="lecture/05CIntro5.pdf" target="_blank">Slides</a><br><a href="lecture/05CIntro5X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=faf25b1b-de1d-48bf-9376-ad75012260ea" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1G2pnNtJCdpyp0FsgBne9fi_Ril9LOeo6uDFeoUyy7vM/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1cg10ONaBHcryX_TG1xD2_Na0gtGDN71A_HQ2lohqQXs/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Sept 20</td>
+                            <td>Intro to C</td>
+                            <td> </td>
+                            <td><a href="lecture/06CIntro6.pdf" target="_blank">Slides</a><br><a href="lecture/06CIntro6X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=da4249c6-f4d3-4367-aceb-ad75012260fc" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1niRh-ag2qqEyivbrXgun92mMi5o2SlQC2hrhqT47yRs/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1xni-EZZst3RfqoRR8_72JDc-29hMGLBblYnkAHcMh5M/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Sept 22</td>
+                            <td>Data Representation</td>
+                            <td>Chapter 2</td>
+                            <td><a href="lecture/07datarep1.pdf" target="_blank">Slides</a><br><a href="lecture/07datarep1X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=71777cd7-ca47-40f0-8d43-ad7501226110" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1opkSZFSlo1HIB6PRp5KIev3bQ1secHhfW19BQyFSZd0/edit?usp=sharing"
+                                   target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1JZM7LSeYIO9gYkewP99eAPKnhC7mqVUqlk3YnVbPyas/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Sept 24</td>
+                            <td>Data Representation</td>
+                            <td>Chapter 2</td>
+                            <td><a href="lecture/08datarep2.pdf" target="_blank">Slides</a><br><a href="lecture/08datarep2X.pdf" target="_blank">Notes</a></td>
+                            <td style="white-space: nowrap;"><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=667f9b24-4242-47f1-ad07-ad7501226125" target="_blank">Recording</a><br><a href="https://drive.google.com/file/d/1LnhTwBGThG6MfwiRh5YlC82u60ElC9Oj/view?usp=sharing" target="_blank">2020 Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1e4bLtgPql2srwwjUIxtRtH8SPnrFIEqbnirRjutTN4Y/edit"
+                                target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1Xdehl90aez04D6HJzrxDJLqqr1sBredVfQfRDUgmrRc/edit" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Sept 27</td>
+                            <td>Data Representation</td>
+                            <td>Chapter 2</td>
+                            <td><a href="lecture/09datarep3AsmIntro.pdf"" target="_blank">Slides</a><br><a href="lecture/09datarep3AsmIntroX.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0d937e7c-5c83-45d2-8ef5-ad750122613a" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1ro4xgJIuPttvVNqVyaOd-9pndTpGPc81Etj2GuwNhi0/edit?usp=sharing"
+                                target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1n3bXmJMalzXR0gOSP5mn2vdRrYVFCUnVebHzYk9S0gI/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Sept 29</td>
+                            <td>x86 Assembler Language</td>
+                            <td>Sections 3.1, 3.2</td>
+                            <td><a href="lecture/10x861.pdf"" target="_blank">Slides</a><br><a href="lecture/10x861X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=15b7011f-4699-4aac-9f18-ad7501226150">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1n3LJO91boidEBtozj81fR__ABgiS69LNpVIC_xxn4v0/edit?usp=sharing"
+                                target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1dZHi-pGYUbLbTC4bQjG-5qwGWJemOaNmnuiUYcrQZpY/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Oct 1</td>
+                            <td>x86 Assembler Language</td>
+                            <td>Sections 3.4, 3.5</td>
+                            <td><a href="lecture/11x862.pdf" target="_blank">Slides</a><br><a href="lecture/11x862X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9908826b-24e3-48ba-854b-ad7501226172" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/15GhE2zpy7MyY16vv8gqZWpV5v742mU4tK_sGycklnws/edit?usp=sharing"
+                                target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1MB5GmXO42qms9EMRjpMqqo-rg6BqgIMoRr-HP1mtxmA/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oct 4</td>
+                            <td>x86 Assembler Language</td>
+                            <td>Section 3.6</td>
+                            <td><a href="lecture/12x863.pdf" target="_blank">Slides</a><br><a href="lecture/12x863X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=43043192-115a-4e87-930b-ad7501226186" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1dWlMFj2tSPbnhOzHDR65JljRJNzsgQV5EyFbzDlV_a0/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1QbHc78pOJUL-TRP3EzTQZCm6YusoPKvtz-1dM1dOQ9M/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Oct 6</td>
+                            <td>x86 Assembler Language</td>
+                            <td>Section 3.7</td>
+                            <td><a href="lecture/13x864.pdf" target="_blank">Slides</a><br><a href="lecture/13x864X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=81cd376a-bf0a-4927-98ae-ad750122619c" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1_w0PglJkflLYbSer409441O7eF60kXs_in8o0XzbKc4/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1v6PPrJlmyxZSVRwQURGgqP9Vdabm3BPm9C3G7TzQ1Pc/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Oct 8</td>
+                            <td>x86 Assembler Language</td>
+                            <td>Section 3.10</td>
+                            <td><a href="lecture/14arch1.pdf" target="_blank">Slides</a><br><a href="lecture/14arch1X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d3ac1391-7d70-4b18-8fd4-ad75012261b1" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1d4PQYKQLnfwL_mhqfjMfXAVZIgPDV2ia3e3jQdn9KUM/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1dmGH8A9sr9n_2h5Zjlj5DmHqKulwtfm8gA-8nAeqmjg/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Oct 11</td>
+                            <td>Holiday!</td>
+                            <td><br><br></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Oct 13</td>
+                            <td>Processor Arch. and Performance</td>
+                            <td>Sections 8.1-8.4</td>
+                            <td><a href="lecture/15archopt2.pdf" target="_blank">Slides</a><br><a href="lecture/15archopt2X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d95348d6-0b07-4cb7-89a3-ad75012261dd" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1V3C2AGbwf-lDcl2b-N2y1nhwI9LKVjYxrDP0NUyUbVc/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/146TMiXj-dftOz4ne9VGDU7lpbI1Bu3JyRyecxyjWm8o/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Oct 15</td>
+                            <td>Memory Hierarchy I</td>
+                            <td>Section 10.1</td>
+                            <td><a href="lecture/16memhier1.pdf" target="_blank">Slides</a><br><a href="lecture/16memhier1X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d70f8975-8398-41d5-9713-ad75012261f4" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1b3Z6xpHVnoziklyo4DhjxbZOWFobC86l1Qyg1OtW-Lg/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1FD9bSST8UD_gjjUp6G5pthaK8kGGYEqWOBRFmD5tK7o/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Oct 18</td>
+                            <td>Caching</td>
+                            <td>Sections 10.2-10.11</td>
+                            <td><a href="lecture/17cache.pdf" target="_blank">Slides</a><br><a href="lecture/17cacheX.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f058acd5-6ad7-4bac-a4e8-ad750122620b" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1ojK6IQJqZEBstNWiulMWgyv7qUXVdoPTUKGE-a6CJbQ/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1lEH2c5D2NKcvRa8OKwKt_H_aQw4T7FYyZFC45NRiKWg/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Oct 20</td>
+                            <td>Architecture and OS</td>
+                            <td>Sections 8.5-8.6</td>
+                            <td><a href="lecture/18files1.pdf" target="_blank">Slides</a><br><a href="lecture/18files1X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f2d2eaee-1f56-41bc-b549-ad7501226223" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1YAYjRTDYHo-m5MLgQPDz28UPR6uSpeOuaQtbzB1G-Ik/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1HTbkTUs_1CyyER-ylurIO-6SQ7_dKKSgzP2zByKp_8o/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>Oct 22</td>
+                            <td>Shells and Files</td>
+                            <td> </td>
+                            <td><a href="lecture/19files2.pdf" target="_blank">Slides</a><br><a href="lecture/19files2X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b0c3f7b7-c25e-44b1-9054-ad750122623b" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1ZQ8hhTwCa-Kd6rVQpu2ARBTxzLkxWekPLNKHCM5RObI/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1-mYKlckvTfHfpfVIEDdOQykmBUBAPgYMKcy66HHeQjI/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>Oct 25</td>
+                            <td>Files</td>
+                            <td>Section 7.1-7.9</td>
+                            <td><a href="lecture/20files3.pdf" target="_blank">Slides</a><br><a href="lecture/20files3X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f65c62b7-250a-44ab-8a6c-ad750122624f">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1JJgaFRIrlrdKzQYV-ZBEA7BgNwGErCOJIuu0X1PQPus/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/19xQEOCYM8DXYVOl-Xb-KWBRK8WrLzIVvjEq559n5Y4M/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>Oct 27</td>
+                            <td>Signals</td>
+                            <td>Section 9.9</td>
+                            <td><a href="lecture/21signals1.pdf" target="_blank">Slides</a><br><a href="lecture/21signals1X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3752f259-699e-46f0-a518-ad7501226262" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/13RqvQTgVOw2qXIJaypO4-6o7ihCuvAcpQOJozZqJr6Q/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1dfmZLIzSzl-VbUPQo70UGUaWG-JjO-ChJwZmKJ441ZY/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>Oct 29</td>
+                            <td>Signals</td>
+                            <td>Section 9.9</td>
+                            <td><a href="lecture/22signals2.pdf" target="_blank">Slides</a><br><a href="lecture/22signals2X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2623893c-0fc0-4c52-89f2-ad7501226276" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1pCZa2NazgWa_xVwBMirscQTeFsY4eFJu8fXMmYuEuWQ/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1iSRR0Ao3jtCtSBBDXodYasIO_apYcGiGloep_s1ttO4/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>Nov 1</td>
+                            <td>Memory Hierarchy II</td>
+                            <td>Sections 9.1, 9.2, 9.6, 9.8</td>
+                            <td><a href="lecture/23memhier2.pdf" target="_blank">Slides</a><br><a href="lecture/23memhier2X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5f1d928b-659e-4b5f-9fb4-ad750122628b" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1Jcarn0xrewjwm6X6c6DtTz1lNF4FB9S8NUzBKT4RHyU/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1FeHm-fhr6LbTsQd17sjmFvFANy3JFtIKwBsw2EHX3WY/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>Nov 3</td>
+                            <td>Linking and Loading</td>
+                            <td>Sections 7.10-7.13</td>
+                            <td><a href="lecture/24link.pdf" target="_blank">Slides</a><br><a href="lecture/24linkX.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1399e272-7cc3-4b85-a78a-ad750122629f" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1GyKoUDeXt4K--53vS-UVKkzpmjr53Eh12KJpGuNjGHo/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1ty2UwnRtXZt4Sbq0i_vNWKzrHy1eRZyk6U9tvZaBBOY/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>Nov 5</td>
+                            <td>Memory Management</td>
+                            <td>Sections 11.1-11.4</td>
+                            <td><a href="lecture/25StorageIntro.pdf" target="_blank">Slides</a><br><a href="lecture/25StorageIntroX.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f2f6a56e-cc1b-47ae-8ace-ad75012262b2" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1cwn9wQFDXIFkjmTUqqb649qZpyi9pcbLLeo8HUg6NbA/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1RnKAvOCVQMYdP3vECoMGXnpc79BlNTZQEEybUI0lvQ8/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>Nov 8</td>
+                            <td>Memory Management</td>
+                            <td></td>
+                            <td><a href="lecture/26StorageAlloc.pdf" target="_blank">Slides</a><br><a href="lecture/26StorageAllocX.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=757b2f7a-54d3-4b84-ab38-ad75012262c5" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1v0KNDfXkOaJ4Gm_SrDNcEKlGOHG_wshj7EGOO_Co7mA/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1cXR70Zrxb-vHawPnqTyhds2vVfThdWKySwExBpjmOyA/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>Nov 10</td>
+                            <td>Virtual Memory</td>
+                            <td>Chapter 12</td>
+                            <td><a href="lecture/27VM1.pdf" target="_blank">Slides</a><br><a href="lecture/27VM1X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=989fcfd9-ba22-4728-9ef1-ad75012262d9" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1zoNKmE1k5hwb0XYR9drfz9y3Y8uXGXnqEdEzOCzdjqs/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/19LNiotgWLyZYvBEM2uNbGw4mXhgLmz50b5LSJVqAZck/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>Nov 12</td>
+                            <td>Virtual Memory</td>
+                            <td> </td>
+                            <td><a href="lecture/28VM2.pdf" target="_blank">Slides</a><br><a href="lecture/28VM2X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bc93808a-f26d-41e3-8ea4-ad75012262ed" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1G7G0v-BZvaNP29WmhFE3J5YeG6lRFBhHMh9ERFzJkDM/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/19_RRzFdwLNjWHorJag3G_GBXX1QCTnvpyrYSui7hxgQ/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td><a href="docs/tcpClient.c" target="_blank">tcpClient.c</a><br><a href="docs/tcpServer.c" target="_blank">tcpServer.c</a><br><a href="docs/udpClient.c" target="_blank">udpClient.c</a><br><a href="docs/udpServer.c" target="_blank">udpServer.c</a></td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>Nov 15</td>
+                            <td>Network Programming</td>
+                            <td> </td>
+                            <td><a href="lecture/29network2.pdf" target="_blank">Slides</a><br><a href="lecture/29network2X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5c8470d1-ae4a-4800-a74d-ad7501226301" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1_oW7Mss7EpbaE3Ed3D7H0bMIhr29rIOQC4TVSdO-g4E/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1r9zOyqoh4y-LTUiUE_q-r03MMK8BoWCfqlo9TR-DAsg/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>Nov 17</td>
+                            <td>Libraries</td>
+                            <td> </td>
+                            <td><a href="lecture/30library.pdf" target="_blank">Slides</a><br><a href="lecture/30libraryX.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5ee175c9-caa1-48fc-8d1e-ad7501226313" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1-Kfl3_lWsdtRDWQf2DG1WrCGhPfQjnX8k6aNJfRE8HY/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1C58J6sbfRS9QUaUl0IuwBKissM5NGtP_2x8D_aTOkmM/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>Nov 19</td>
+                            <td>Libraries</td>
+                            <td> </td>
+                            <td><a href="lecture/31Threads1.pdf" target="_blank">Slides</a><br><a href="lecture/31Threads1X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ae503fa8-eaf9-4162-94d5-ad7501226329" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1wHS5N3xlvm2B7ufpXHqQPvEFftk-pbXRKEQGPjQxQOM/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1IJggt1rzmroSnXNpAuWh4e6DothjYJQTnSzKYp3PU50/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>Nov 22</td>
+                            <td>Concurrent Programming</td>
+                            <td> </td>
+                            <td><a href="lecture/32Threads2.pdf" target="_blank">Slides</a><br><a href="lecture/32Threads2X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=622b3695-f7ef-4a5e-8cc1-ad750122633e" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1C756jtGDzvWpiim4P474hg0BSxB2ptcXWSVM1L6nhck/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1S-4w82zjfKcrFMAzS5zZEU7jRxegcN-pnp-3IMBqdYM/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Nov 24</td>
+                            <td>Holiday!</td>
+                            <td> </td>
+                            <td><br><br></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Nov 26</td>
+                            <td>Holiday!</td>
+                            <td> </td>
+                            <td><br><br></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>Nov 29</td>
+                            <td>Concurrent Programming</td>
+                            <td> </td>
+                            <td><a href="lecture/33Threads3.pdf" target="_blank">Slides</a><br><a href="lecture/33Threads3X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a9970f9-297e-4990-ba70-ad7501226392" target="_blank">Recording</a></td>
+                            <td><a href="https://docs.google.com/document/d/1WJOgasFWwRzl2Yy8KwZJoSrvmxOU4vaSCUKl4tQzcq8/edit?usp=sharing" target="_blank">Questions</a><br><a href="https://docs.google.com/document/d/1FbCVt3FzQk8vzcFeWyQC-ZprZgF219z2-xiEOxN_Kg4/edit?usp=sharing" target="_blank">Answers</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>Dec 1</td>
+                            <td>Concurrent Programming</td>
+                            <td> </td>
+                            <td><a href="lecture/34Threads4.pdf" target="_blank">Slides</a><br><a href="lecture/34Threads4X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=dedb9545-6472-4b24-a005-ad75012263a9" target="_blank">Recording</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>Dec 3</td>
+                            <td>Concurrent Programming</td>
+                            <td><a href="https://edstem.org/us/courses/13193/discussion/922278" target="_blank">Clarifications</a> </td>
+                            <td><a href="lecture/35Threads5-as-lectured.pptx.pdf" target="_blank">Slides</a><br>[Notes]</td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=03db7544-e72a-4b3e-bc23-ad75012263c0">Recording</a></td>
+                            <td></td>
+                            <td><a href="docs/barrier-broken.c" target="_blank">barrier-broken.c</a><br><a href="docs/barrier.c" target="_blank">barrier.c</a></td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>Dec 6</td>
+                            <td>Concurrent Programming</td>
+                            <td> </td>
+                            <td><a href="lecture/36Threads6.pdf" target="_blank">Slides</a><br><a href="lecture/36Threads6X.pdf" target="_blank">Notes</a></td>
+                            <td><a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=79394d36-f88c-480f-8cb2-ad75012263d8" target="_blank">Recording</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <h3>Project Gear Ups</h3>
+                    <p>
+                        Looking for guidance as you start your project each week? Want a refresher on what material
+                        has been covered and an outline of what you will be writing? Come to our Project Gear Up
+                        Sessions! We’ll also be going over how to use the demo(s) and tester(s) and other relevant
+                        scripts for each project!
+                    <p>
+                        For each project, we will hold a Gear Up session a day after it is released. All Gear Up
+                        sessions will be held via Zoom, and check the course calendar for time and Zoom link. Come
+                        prepared with questions!!
+                    </p>
+                    <table class="gear-up">
+                        <tr>
+                            <th>Date</th>
+                            <th>Topic</th>
+                            <th>Slides</th>
+                            <th>Video</th>
+                        </tr>
+                        <tr>
+                            <td>9/13 @ 8pm</td>
+                            <td>Maze</td>
+                            <td><a href="https://docs.google.com/presentation/d/1tw_5vrlPqkLV_9hgguCoqs8zgr3Q6TF85hIoyQnwPSA/edit?usp=sharing"
+                                target="_blank">Slides</a></td>
+                            <td><a href="https://brown.zoom.us/rec/share/Es1a-DtBbHi_aiz7B_PauK5_uLYTZW_nk35DEUoO-KdNRD0C9HEJcCAoqMlCkm_J.WhyU7UIJxjhDXGKG"
+                                target="_blank">Video</a></td>
+                        </tr>
+                        <tr>
+                            <td>9/24 @ 9:30am</td>
+                            <td>Data</td>
+                            <td><a href="https://docs.google.com/presentation/d/1ZSsjZyCFlCt1o9mF3Uykm9w4qYRPIBfujPjBA1SknrY/edit?usp=sharing"
+                                target="_blank">Slides</a></td>
+                            <td><a href="https://brown.zoom.us/rec/share/oxQWtlIB16kkld9iK3p9PgnqDzfuJULAo-QP47UnFmylh2lgqqNPTCXkHCqXnmEp.IwMls4nNUue9k7Ut"
+                                target="_blank">Video</a></td>
+                        </tr>
+                        <tr>
+                            <td>9/30 @ 8pm</td>
+                            <td>Traps</td>
+                            <td><a href="https://docs.google.com/presentation/d/1ZE80fqb4VxvOTPsEmQhe9JJvPuJvgHsat3uUGXbq0Mg/edit#slide=id.p1"
+                                target="_blank">Slides</a></td>
+                                <td><a href="https://drive.google.com/file/d/1GxNy5eUKBWHtvbEdoTEYVILFAvA9FrIf/view?usp=sharing" target="_blank">Video</a></td>
+                        </tr>
+                        <tr>
+                            <td>10/8 @ 7pm</td>
+                            <td>Buffer</td>
+                            <td><a href="https://docs.google.com/presentation/d/1okFQRGPAtf0sHxVo8I9BvbhLlRFEsIkFo1tLZZrceLQ/edit?usp=sharing" target="_blank">Slides</a></td>
+                            <td><a href="https://drive.google.com/file/d/1wzE5DxiWSATDuhLCpn9-JYkcBDOLs99M/view?usp=sharing" target="_blank">Video</a></td>
+                        </tr>
+                        <tr>
+                            <td>10/26 @ 10pm</td>
+                            <td>Shell 1</td>
+                            <td><a href="https://docs.google.com/presentation/d/1WSErpO-Fum6-1CZnJE2Gm2di3i1Ug-M_r9pTxaDBqvA/edit?usp=sharing" target="_blank">Slides</a></td>
+                            <td><a href="https://drive.google.com/file/d/1FYtoSCt_WcehId0fWUtpfc741LuZWG9F/view?usp=sharing" target="_blank">Video</a></td>
+                        </tr>
+                        <tr>
+                            <td>11/3 @ 10am</td>
+                            <td>Shell 2</td>
+                            <td><a href="https://docs.google.com/presentation/d/1UMMjCqg-9h3cxdmTfbYftTOHZefEzVu4guwdNXYoCUE/edit?usp=sharing" target="_blank">Slides</a></td>
+                            <td><a href="https://drive.google.com/file/d/1UZRWR2cf_Qx8WnhvnwAC0dDec6fs4Zlo/view?usp=sharing" target="_blank">Video</a></td>
+                        </tr>
+                        <tr>
+                            <td>11/10 @ 7pm</td>
+                            <td>Malloc</td>
+                            <td><a href="https://docs.google.com/presentation/d/1UWu8WoxC6UhI8ka6Xn7J8HwKB4V60uwB8hTkTdfvdDM/edit?usp=sharing" target="_blank">Slides</a></td>
+                            <td><a href="https://brown.zoom.us/rec/share/wVikmbj-9dUYdgdPDEuCkcXSXTPFdhWZmaWhFbhdejCFMwrFsZdS7JSi9w-9eKiE.4Qg80JtGbIP1rubS" target="_blank">Video</a></td>
+                        </tr>
+                        <tr>
+                            <td>12/2 @ 8:30pm</td>
+                            <td>Database</td>
+                            <td><a href="https://docs.google.com/presentation/d/1_Ph70jS4vnYxxih_4lteXXymTuVz8-fHFDlnfBmHhoQ/edit" target="_blank">Slides</a></td>
+                            <td><a href="https://drive.google.com/file/d/10j_gcgOEkFRf7XkT-Hdyxk_J4vgiGgbW/view?usp=sharing" target="_blank">Video</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Hours -->
+    <section id="hours">
+        <div class="container content-section">
+            <h2 class="section-title">Hours <img class="section-title-img" src="img/bus_icon.png"></h2>
+            <div class="row">
+
+                <!-- Regular hours -->
+                <div class="col-md-12">
+                    <h3>Tom's Office Hours</h3>
+                    <p>Professor Doeppner's hours will be in CIT 405, x3-7633.
+                    </p>
+                    <table class="tom-hours">
+                        <tr>
+                            <td>Monday</td>
+                            <td>3-4pm</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>3-4pm</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>3-4pm</td>
+                        </tr>
+                    </table>
+
+                    <h3>TA Hours</h3>
+                    <p>During TA hours, you'll be able to get help from TAs with course concepts as well as project and
+                        lab-specific questions. Note that you may not ask questions about labs in project hours (and
+                        vice versa) or have a lab checked off during project hours. During conceptual hours, you may not
+                        bring up code-specific questions.</p>
+                    <h3>Signing Up</h3>
+                    <p>Sign up for TA hours via <a href="http://signmeup.cs.brown.edu/">SignMeUp</a>.</p>
+
+                    <iframe
+                        src="https://calendar.google.com/calendar/embed?src=c_9vnqf170tqq861urkqba1dpmj8%40group.calendar.google.com&ctz=America%2FNew_York"
+                        style="border-width: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                    <!--<iframe class="iframe" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=YnJvd24uZWR1X2p0cjkydDRxcTlkbnNuNmVxM2plc2poYWo4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%237CB342&amp;mode=WEEK" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+                    <!--  <h3>Lab Hours</h3>
+                    <p>During lab hours, you will be able to work with others and ask TAs for help finishing lab. Please show up to one of the following times to work on a lab. Most labs are autograded, but for certain labs you will have to be checked off at these hours too. Note that TAs will not answer project-related questions during lab hours.</p>
+                    <iframe class = "iframecal" src="https://calendar.google.com/calendar/b/1/embed?title=Labs&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=brown.edu_emmv05ed9pbh8ftjq6sgmb6gks%40group.calendar.google.com&amp;color=%238D6F47&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff -->
+    <section id="staff">
+        <div class="container content-section staff">
+            <h2 class="section-title">Staff <img class="section-title-img" src="img/bus_icon.png"></h2>
+            <h3>Professor</h3>
+            <div class="staff-flexbox">
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/twd.jpg">
+                        <img class="ta-item" src="img/characters/7-frizzle.png">
+                    </div>
+                    <h3 class="ta-name">Tom Doeppner</h3>
+                    <p class="ta-login">twd</p>
+                    <p class="ta-pronouns">he/him/his</p>
+                    <p class="ta-bio">Tom has been at Brown CS since its inception (not Brown's, but Brown CS's). He
+                        personally installed Brown's first UNIX system and has been into systems ever since. When not
+                        doing CS, he likes photography, which he prefers to do underwater, but now does mostly on land.
+                    </p>
+                </div>
+            </div>
+            <h3>HTAs (cs0330headtas@lists.brown.edu)</h3>
+            <div class="staff-flexbox">
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/hluby_2.png">
+                        <img class="ta-item" src="img/people/hluby_1.jpeg">
+                    </div>
+                    <h3 class="ta-name">Harisen Luby</h3>
+                    <p class="ta-login">hluby</p>
+                    <p class="ta-pronouns">She/Her</p>
+                    <p class="ta-bio">
+                        Hi everyone! I'm a senior studying CS and I'm from Phoenix, AZ. 
+                        Outside of school, I'm a big movie buff and would love any recommendations 
+                        you may have (my fav zombie movie is 28 Days Later!). I'm incredibly excited 
+                        to be your HTA this semester :) 
+                    </p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/ayalava2_1.jpg">
+                        <img class="ta-item" src="img/people/ayalava2_2.png">
+                    </div>
+                    <h3 class="ta-name">Arvind Yalavarti</h3>
+                    <p class="ta-login">ayalava2</p>
+                    <p class="ta-pronouns">He/Him/His</p>
+                    <p class="ta-bio">
+                        Hi there! I'm a senior studying apma-cs. Outside of class I'm into photography and filmmaking!
+                    </p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/ayalava2_1.jpg">
+                        <img class="ta-item" src="img/people/ayalava2_2.png">
+                    </div>
+                    <h3 class="ta-name">Parker Simon</h3>
+                    <p class="ta-login"></p>
+                    <p class="ta-pronouns">He/Him/His</p>
+                    <p class="ta-bio">
+                        
+                    </p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/ddang4.jpg">
+                        <img class="ta-item" src="img/characters/9-ralphie.jpeg">
+                    </div>
+                    <h3 class="ta-name">Divyam Dang</h3>
+                    <p class="ta-login">ddang4</p>
+                    <p class="ta-pronouns">He/Him/His</p>
+                    <p class="ta-bio">Hi!! I'm a junior concentrating in Computer Science from New Delhi, India. I enjoy
+                        playing videogames, watching Formula 1 and sleeping. Excited to see you guys in person.
+                    </p>
+                </div>
+
+            </div>
+            <h3>UTAs (cs0330tas@lists.brown.edu)</h3>
+            <div class="staff-flexbox">
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/khachisu_2.jpg">
+                        <img class="ta-item" src="img/people/khachisu_1.JPG">
+                    </div>
+                    <h3 class="ta-name">Keigo Hachisuka</h3>
+                    <p class="ta-login">khachisu</p>
+                    <p class="ta-pronouns">he/him/his</p>
+                    <p class="ta-bio">
+                        Hi! I'm a junior from Conroe, TX concentrating in CS. Outside of schoolwork I enjoy playing rugby, hockey, and watching F1!
+                    </p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/agu10_1.jpg">
+                        <img class="ta-item" src="img/people/agu10_2.JPEG">
+                    </div>
+                    <h3 class="ta-name">Alan Gu
+                    </h3>
+                    <p class="ta-login">agu10</p>
+                    <p class="ta-pronouns">he/him/his</p>
+                    <p class="ta-bio">Hi I'm Alan. Don't sleep on the Burger King Spicy Ch'King Sandwich.</p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/exing1_1.JPEG">
+                        <img class="ta-item" src="img/people/exing1_1.JPEG">
+                    </div>
+                    <h3 class="ta-name">Edward Xing</h3>
+                    <p class="ta-login">exing1</p>
+                    <p class="ta-pronouns">he/him/his</p>
+                    <p class="ta-bio">
+                        Hi! My name is Edward Xing. I am from Westfield, NJ. At Brown, I study Applied Math-Computer Science and Economics. 
+                    </p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/jcheng46_2.jpeg">
+                        <img class="ta-item" src="img/people/jcheng46_1.jpg">
+                    </div>
+                    <h3 class="ta-name">Jack Cheng</h3>
+                    <p class="ta-login">jcheng46</p>
+                    <p class="ta-pronouns">He/Him/His</p>
+                    <p class="ta-bio">
+                        Hello! My name is Jack. I come from Barrington, RI. I study math-cs and I like to try and open as many doors as I can and walk into them.
+                    </p>
+                </div>
+
+
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/klu25_2.jpeg">
+                        <img class="ta-item" src="img/people/klu25_1.jpeg">
+                    </div>
+                    <h3 class="ta-name">Kevin Lu</h3>
+                    <p class="ta-login">klu25</p>
+                    <p class="ta-pronouns">He/Him</p>
+                    <p class="ta-bio">
+                        I'm a junior studying applied math and computer science. I grew up in New Orleans, Louisiana and I have 2 cats.
+                    </p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/kkimata_1.JPG">
+                        <img class="ta-item" src="img/people/kkimata_1.JPG">
+                    </div>
+                    <h3 class="ta-name">Kenya Kimata</h3>
+                    <p class="ta-login">kkimata</p>
+                    <p class="ta-pronouns">he/him/his</p>
+                    <p class="ta-bio">
+                        Hi! I'm a senior from Japan currently studying Computer Science. I love watching anime and traveling around places. Nice to meet you all!
+                    </p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/djoca_1.JPG">
+                        <img class="ta-item" src="img/people/djoca_2.JPG">
+                    </div>
+                    <h3 class="ta-name">Danny oca</h3>
+                    <p class="ta-login">djoca</p>
+                    <p class="ta-pronouns">he/him/his</p>
+                    <p class="ta-bio">
+                        Hi, I’m Danny. I’m a senior from Boston studying computer engineering. Outside of class, I enjoying watching and debating football, 
+                        burning time with video games, and rewatching old mafia movies I’ve seen like 20 times. 
+                    </p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/jaxel.jpg">
+                        <img class="ta-item" src="img/characters/12-liz.png">
+                    </div>
+                    <h3 class="ta-name">Jacob Axel</h3>
+                    <p class="ta-login">jaxel</p>
+                    <p class="ta-pronouns">he/him/his</p>
+                    <p class="ta-bio">Hi, I'm Jacob! I'm a Junior from New York City studying Applied Math and Computer
+                        Science. Outside the classroom I enjoy watching and playing almost every sport, and have
+                        recently been getting back into chess after watching The Queen's Gambit.</p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/jtan26.jpg">
+                        <img class="ta-item" src="img/characters/6-keesha.png">
+                    </div>
+                    <h3 class="ta-name">Jenny Tan</h3>
+                    <p class="ta-login">jtan26</p>
+                    <p class="ta-pronouns">she/her/hers</p>
+                    <p class="ta-bio">Howdy! I'm Jenny and I'm a junior studying CS from Dallas, Texas. In my free time,
+                        I like running, drinking an unhealthy amount of boba, and playing taiko with Gendo Taiko!</p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/jwalendo.jpg">
+                        <img class="ta-item" src="img/characters/6-keesha.png">
+                    </div>
+                    <h3 class="ta-name">Jordan Walendom</h3>
+                    <p class="ta-login">jwalendo</p>
+                    <p class="ta-pronouns">he/him/his</p>
+                    <p class="ta-bio">Hey! I'm Jordan and I'm a junior studying CS. I've lived between the Ivory Coast,
+                        Tunisia, and the USA throughout my life which makes all three feel like home for me. I love
+                        Liverpool FC, the Dallas Mavericks, and rap.</p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/jsu15.jpg">
+                        <img class="ta-item" src="img/characters//11-wanda.png">
+                    </div>
+                    <h3 class="ta-name">Kaki Su</h3>
+                    <p class="ta-login">jsu15</p>
+                    <p class="ta-pronouns">she/her/hers</p>
+                    <p class="ta-bio">hallo! I'm a junior from Japan studying CS. I loooove my stuffed animal cats/dogs
+                        who are named after music genres. I also like classical music, Japanese sake, and eggs a lot. I
+                        like to go on spontaneous trips, but I also like to nap in my fuzzy blankets.</p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/kwang111.jpg">
+                        <img class="ta-item" src="img/characters/10-tim.jpg">
+                    </div>
+                    <h3 class="ta-name">Kelly Wang</h3>
+                    <p class="ta-login">kwang111</p>
+                    <p class="ta-pronouns">she/her/hers</p>
+                    <p class="ta-bio">Hello! I am Kelly, a Junior from California concentrating in CS-Econ. I like
+                        digital illustration, listening to J-pop, and anime. I also like Salmon, especially in sushi.
+                    </p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/kkimata.jpg">
+                        <img class="ta-item" src="img/characters/2-phoebe.png">
+                    </div>
+                    <h3 class="ta-name">Kenya Kimata</h3>
+                    <p class="ta-login">kkimata</p>
+                    <p class="ta-pronouns">he/him/his</p>
+                    <p class="ta-bio">Hi! I'm a rising junior from Japan currently studying Computer Science. I love watching anime and traveling around places. Nice to meet you all!</p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/ksoda.jpg">
+                        <img class="ta-item" src="img/characters/3-carlos.jpeg">
+                    </div>
+                    <h3 class="ta-name">Kota Soda</h3>
+                    <p class="ta-login">ksoda</p>
+                    <p class="ta-pronouns">he/him/his</p>
+                    <p class="ta-bio">Hey, I'm Kota! I'm a Junior studying APMA-CS from Tokyo. Outside of the classroom,
+                        I love baseball, going on runs, and making omelettes. My favorite magic school bus episode is
+                        the one where they go on the bus.</p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/mmapeke.jpg">
+                        <img class="ta-item" src="img/characters/10-tim.jpg">
+                    </div>
+                    <h3 class="ta-name">Marc Mapeke</h3>
+                    <p class="ta-login">mmapeke</p>
+                    <p class="ta-pronouns">he/him/his</p>
+                    <p class="ta-bio">Hey everyone! I'm a junior from The Bronx, NYC. I'm doing a joint concentration in
+                        APMA-CS and some of my favorite pastimes recently have been listening to music, taking naps, and
+                        trying new food spots in Providence. Excited to meet y'all!</p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/nthakka3.jpg">
+                        <img class="ta-item" src="img/characters/6-keesha.png">
+                    </div>
+                    <h3 class="ta-name">Nitya Thakkar</h3>
+                    <p class="ta-login">nthakka3</p>
+                    <p class="ta-pronouns">she/her/hers</p>
+                    <p class="ta-bio">Hi! I'm Nitya Thakkar and I'm a junior from Minnesota studying computer science. I
+                        love getting outdoors and anything to do with food :)</p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/ptheodor.jpg">
+                        <img class="ta-item" src="img/characters/12-liz.png">
+                    </div>
+                    <h3 class="ta-name">Peter Theodores</h3>
+                    <p class="ta-login">ptheodor</p>
+                    <p class="ta-pronouns">he/him/his</p>
+                    <p class="ta-bio">Hi, I'm Peter! I'm a senior from Maine and I'm studying CS and Math. I play
+                        saxophone, and love playing board games and cooking.</p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/pzubiago.jpg">
+                        <img class="ta-item" src="img/characters/10-tim.jpg">
+                    </div>
+                    <h3 class="ta-name">Peter Zubiago</h3>
+                    <p class="ta-login">pzubiago</p>
+                    <p class="ta-pronouns">he/him/his</p>
+                    <p class="ta-bio">Hi! I'm a senior studying English and Computer Science. When I'm not in the CIT,
+                        you can probably find me watching/writing about television, reading pretentious novels, acting,
+                        or swimming! I'm excited to be your TA :)</p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/rtang26.jpg">
+                        <img class="ta-item" src="img/characters/12-liz.png">
+                    </div>
+                    <h3 class="ta-name">Richard Tang</h3>
+                    <p class="ta-login">rtang26</p>
+                    <p class="ta-pronouns">He/him</p>
+                    <p class="ta-bio">Hi everyone! I'm Richard, and I'm a sophomore from Columbus, OH concentrating in
+                        Math-CS :) I like running, biking, and baking, and I occasionally play viola or piano (also too
+                        much League). I've also watched The West Wing 7 times. Super excited to be your TA!</p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/rhall10.jpg">
+                        <img class="ta-item" src="img/characters/9-ralphie.jpeg">
+                    </div>
+                    <h3 class="ta-name">Roman Hall</h3>
+                    <p class="ta-login">rhall10</p>
+                    <p class="ta-pronouns">He/him</p>
+                    <p class="ta-bio">Hi! I'm Roman, a junior from Brooklyn studying CS and Classics. I'm interested in
+                        software engineering/programming and languages in general. Outside of school I like biking,
+                        listening to/playing music, and spending time with friends! Excited to meet you guys :)</p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/rzhao22.jpg">
+                        <img class="ta-item" src="img/characters/12-liz.png">
+                    </div>
+                    <h3 class="ta-name">Rosanna Zhao</h3>
+                    <p class="ta-login">rzhao22</p>
+                    <p class="ta-pronouns">she/her/hers</p>
+                    <p class="ta-bio">Hey! I am a junior from Shanghai studying Computer Science-Economics. In my free
+                        time, I enjoy playing League of Legends, taking pictures of my two pet ragdoll kittens, and
+                        spending time with my friends.</p>
+                </div>
+
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/sbansa12.jpg">
+                        <img class="ta-item" src="img/characters/8-bus.jpeg">
+                    </div>
+                    <h3 class="ta-name">Sahil Bansal</h3>
+                    <p class="ta-login">sbansa12</p>
+                    <p class="ta-pronouns">he/him/his</p>
+                    <p class="ta-bio">Hi! I'm a junior concentrating in CS. I'm from the US and grew up in Saudi Arabia
+                        and India. I love reading manga, being with family and friends, and watching cooking shows but
+                        never actually cooking anything!</p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/sfeucht.jpg">
+                        <img class="ta-item" src="img/characters/9-ralphie.jpeg">
+                    </div>
+                    <h3 class="ta-name">Sheridan Feucht</h3>
+                    <p class="ta-login">sfeucht</p>
+                    <p class="ta-pronouns">she/her/hers</p>
+                    <p class="ta-bio">I'm Sheridan, a 3rd-year from Calgary, Canada concentrating in Computer Science. I
+                        love music, making art, and matcha. Currently re-reading The Silmarillion and Unfinished Tales.
+                    </p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/yruan4.jpg">
+                        <img class="ta-item" src="img/characters/3-carlos.jpeg">
+                    </div>
+                    <h3 class="ta-name">Yifan Ruan</h3>
+                    <p class="ta-login">yruan4</p>
+                    <p class="ta-pronouns">he/him/his</p>
+                    <p class="ta-bio">Hi, I'm a junior concentrating in computer science and math. My hobbies include
+                        swimming, beachcombing, and keeping plants and fish. I'm looking forward to meeting everyone
+                        this semester!</p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/zasghar1.jpg">
+                        <img class="ta-item" src="img/characters/3-carlos.jpeg">
+                    </div>
+                    <h3 class="ta-name">Zain Asghar</h3>
+                    <p class="ta-login">zasghar1</p>
+                    <p class="ta-pronouns">he/him/his</p>
+                    <p class="ta-bio">Hi everyone, my name is Zain. I am a junior concentrating in CS from Washington
+                        DC/Pakistan/India, but I grew up in the UAE. In my free time, I enjoy playing/watching
+                        basketball, tennis, and badminton. </p>
+                </div>
+
+                <div class="ta-member">
+                    <div class="ta-img">
+                        <img class="ta-profile" src="img/people/zzhou65.jpg">
+                        <img class="ta-item" src="img/characters/1-arnold.png">
+                    </div>
+                    <h3 class="ta-name">Ziwen Zhou</h3>
+                    <p class="ta-login">zzhou65</p>
+                    <p class="ta-pronouns">he/him/his</p>
+                    <p class="ta-bio">Hi everyone! I'm a junior studying APMA/CS and I'm from Philadelphia,
+                        Pennsylvania. In my free time, I enjoy reading, spending time in nature, and playing chess.
+                        Looking forward to seeing all of you!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container text-center">
+                <p>
+                    &copy; 2021 CS0330 TA Staff
+                    <span class="spacing">|</span>
+                    <a href="http://cs.brown.edu">Computer Science Department</a>
+                    <span class="spacing">|</span>
+                    <a href="http://brown.edu">Brown University</a>
+                </p>
+            </div>
+        </footer>
+
+        <!-- Javascript files -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/cs33.js"></script>
+        </div>
+</body>
+
+</html>
