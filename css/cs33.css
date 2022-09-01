@@ -26,12 +26,23 @@
   src: url("../img/dafont/DeadKansas.ttf");
 }
 
+@font-face {
+  font-family: ComicText;
+  src: url("../img/dafont/adamwarrenpro.ttf");
+}
+
+@font-face {
+  font-family: ComicTextBold;
+  src: url("../img/dafont/adamwarrenpro-bold.ttf");
+}
+
 * {
     color: var(--body-text-color);
 }
 body {
     width: 100%;
     font-family: "Montserrat", Arial, serif;
+    /* font-family: ComicText; */
     background-color: #eafdff;
 }
 
@@ -70,9 +81,10 @@ p {
 }
 
 blockquote, tagline {
-    font-family: Playfair, serif;
-    font-size: 1.3em;
-    font-style: italic;
+    font-family: ComicText;
+    font-size: 1.1em;
+    line-height: 1.8em;
+    /* font-style: italic; */
 }
 
 a:hover,
@@ -99,9 +111,10 @@ tr:nth-child(2n+1) {
 }
 
 th {
-    height: 3.5em;
+    height: 3.0em;
     background-color: var(--comic-red);
-    font-size: 1.05em;
+    font-family: ComicTextBold;
+    font-size: 1.1em;
 
 }
 
@@ -410,6 +423,8 @@ footer a {
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
     color: #222e23;
+    font-family: ComicTextBold;
+    font-size: 1.7rem;
 }
 
 .navbar-custom .nav li a:hover {
@@ -484,6 +499,8 @@ footer a {
 }
 
 .resources-header {
+    font-family: ComicTextBold;
+    font-size: 1.8rem;
     /* margin-left: -2rem; */
 }
 
@@ -522,7 +539,7 @@ footer {
 }
 
 .intro-body{
-    font-size:16px;
+    font-size:17px;
     color: var(--heading-text-color)
 }
 
@@ -757,7 +774,7 @@ body {
 .ta-img img {
     width: 200px;
     height: 200px;
-    box-shadow: 5px 5px 0px rgb(254 211 49 / 70%)
+    box-shadow: 5px 5px 0px rgb(74 100 61 / 70%)
 }
 
 .ta-profile{
@@ -822,3 +839,8 @@ body {
         width: 70%;
     }
   }
+
+
+/* .comic-bubble {
+  background-image: url('../img/comicbubble.png')
+} */
