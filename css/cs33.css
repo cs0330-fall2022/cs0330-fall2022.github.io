@@ -443,7 +443,7 @@ footer a {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(20, 20, 20, 0.05);
+    background-color: rgb(155 184 153 / 50%);
 }
 
 .navbar-custom .nav li.active a:hover {
