@@ -337,6 +337,10 @@ td, th {
   /* padding: 0px 4px; */
 }
 
+#assignments a:hover {
+  color: #69605a;
+}
+
 #lectures {
   background-color: var(--green-bg);
 }
