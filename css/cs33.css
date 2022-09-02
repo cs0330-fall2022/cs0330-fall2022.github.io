@@ -340,9 +340,14 @@ td, th {
 }
 
 .section-title-img{
-    padding-top: 50px;
-    width: 140px;
+    padding-top: 20px;
+    width: 100px;
     object-fit: contain;
+}
+
+.large-img {
+  width: 140px;
+  padding-top: 50px;
 }
 
 @media(min-width:768px) {
