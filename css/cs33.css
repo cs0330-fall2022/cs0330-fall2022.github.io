@@ -348,12 +348,23 @@ td, th {
 #lectures a {
   color: var(--body-text-color);
   border-radius: 5px;
-  background-color: rgb(233 233 233 / 50%);
-  padding: 0px 4px;
+  font-weight: bold;
+  /* background-color: rgb(233 233 233 / 50%); */
+  /* padding: 0px 4px; */
 }
 
 #hours {
   background-color: var(--green-bg);
+}
+
+#hours a {
+  color: var(--body-text-color);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#hours a:hover {
+  color: #69605a;
 }
 
 #staff {
@@ -361,12 +372,6 @@ td, th {
   background-color: var(--camo-gray);
   width: 100%;
   align-items: center;
-}
-
-#staff h2 {
-  /*color: #000;*/
-  /*color: #fff;*/
-  /*font-family: "Montserrat", serif;*/
 }
 
 #staff h4 {
@@ -565,7 +570,7 @@ footer a {
 }
 
 .hamburger-icon {
-  color: #323c18'
+  color: #323c18
 
 }
 
