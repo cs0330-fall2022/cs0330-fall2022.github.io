@@ -635,6 +635,12 @@ footer a {
   background-size: 600px;
 }
 
+#docs-and-guides a {
+  color: var(--body-text-color);
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
 .resources-header {
   font-family: ComicTextBold;
   font-size: 1.8rem;
