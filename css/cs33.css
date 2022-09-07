@@ -353,6 +353,10 @@ td, th {
   /* padding: 0px 4px; */
 }
 
+#lectures a:hover {
+  color: #69605a;
+}
+
 #hours {
   background-color: var(--green-bg);
 }
