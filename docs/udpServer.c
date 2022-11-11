@@ -21,6 +21,7 @@ int main(int argc, char *argv[ ]) {
     memset(&udp_hints, 0, sizeof(udp_hints));
     udp_hints.ai_family = AF_INET;
     udp_hints.ai_socktype = SOCK_DGRAM;
+    udp_hints.ai_flags = AI_PASSIVE;
 
     int err;
     if ((err = getaddrinfo(NULL, argv[1], &udp_hints, &result)) != 0) {
